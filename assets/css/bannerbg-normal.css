@@ -1,0 +1,5 @@
+/* Banner Background for all normal pages */
+
+	#header {
+		background: url("../../images/banner.png") center center;
+	}

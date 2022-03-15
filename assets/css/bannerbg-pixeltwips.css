@@ -1,0 +1,5 @@
+/* Banner Background for the PixelTwips page */
+
+	#header {
+		background: url("../../images/banner_pixeltwips.png") center center;
+	}

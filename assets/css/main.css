@@ -147,7 +147,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-top: solid 1px #ddd;
+		border-top: solid 5px #dddddd75;
 		margin: 2em 0 2em 0;
 	}
 
@@ -2078,7 +2078,7 @@ input, select, textarea {
 		}
 
 		.homepage #header {
-			height: 35em;
+			height: 20em;
 		}
 
 /* Logo */
@@ -2087,7 +2087,7 @@ input, select, textarea {
 		width: 100%;
 		text-align: center;
 		position: relative;
-		top: 1.5em;
+		top: 2em;
 	}
 
 		#logo h1 {
@@ -3029,22 +3029,35 @@ input, select, textarea {
 
 /* Caption Info */
 .Info {
-  color: #e3e3e3;
-  font-size: 16px;
-  padding: 10px 14px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
+	color: #ffffff;
+	font-size: 125%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	position: absolute;
+	bottom: 5%;
+	width: auto;
+	text-align: center;
+	background-color: #0000008a;
+}
+
+.Info_PosR {
+	right: 0%;
 }
 
 /* Worknumbering (1/3 etc) */
 .MessageInfo {
-  color: #f2f2f3;
-  font-size: 14px;
-  padding: 10px 14px;
-  position: absolute;
-  top: 0;
+	color: #ffffff;
+	font-size: 100%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+	position: absolute;
+	top: 0;
+	width: auto;
+	background-color: #0000008a;
 }
 
 /* The circles or bullets and indicators */
@@ -3079,4 +3092,53 @@ input, select, textarea {
 @keyframes fade {
   from {opacity: .5}
   to {opacity: 2}
+}
+
+.avatar { 
+	border-radius: 50%; 
+}
+
+.label
+{
+  border-radius: 5px;
+  color: #fff; 
+  font-size: 75%;
+  text-align: center;
+  padding: 5px;
+  line-height: normal;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  display: inline-block;
+  margin-bottom: 0.25em;
+  margin-right: 0.25em;
+}
+
+.gamedesign
+{
+  background-color: #7c336c;
+  content: "Game Design";
+}
+
+.sounddesign
+{
+  background-color: #337c7c;
+  content: "Sound Design";
+}
+
+.programming
+{
+  background-color: #717c33;
+  content: "Programming";
+}
+
+.art
+{
+  background-color: #337c4f;
+  content: "Art";
+}
+
+.tools
+{
+  background-color: #7c4433;
+  content: "Programming";
 }

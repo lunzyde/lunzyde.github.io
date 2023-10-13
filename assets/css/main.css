@@ -148,7 +148,7 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-top: solid 5px #dddddd75;
-		margin: 2em 0 2em 0;
+		margin: 0 0 0 0;
 	}
 
 	sub {
@@ -172,7 +172,7 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table, blockquote, form {
-		margin-bottom: 2em;
+		margin-bottom: 0;
 	}
 
 /* Container */
@@ -408,12 +408,12 @@ input, select, textarea {
 				}
 
 		.row {
-			margin-top: -50px;
-			margin-left: -50px;
+			margin-top: 0px;
+			margin-left: 0px;
 		}
 
 			.row > * {
-				padding: 50px 0 0 50px;
+				padding: 0 12.5px 0 12.5px;
 			}
 
 			.row.gtr-uniform {
@@ -651,12 +651,12 @@ input, select, textarea {
 						}
 
 				.row {
-					margin-top: -50px;
-					margin-left: -50px;
+					margin-top: 0px;
+					margin-left: 0px;
 				}
 
 					.row > * {
-						padding: 50px 0 0 50px;
+						padding: 0 12.5px 0px 12.5px;
 					}
 
 					.row.gtr-uniform {
@@ -896,12 +896,12 @@ input, select, textarea {
 						}
 
 				.row {
-					margin-top: -35px;
-					margin-left: -35px;
+					margin-top: 0px;
+					margin-left: 0px;
 				}
 
 					.row > * {
-						padding: 35px 0 0 35px;
+						padding: 0 12.5px 0 12.5px;
 					}
 
 					.row.gtr-uniform {
@@ -1141,12 +1141,12 @@ input, select, textarea {
 						}
 
 				.row {
-					margin-top: -50px;
-					margin-left: -50px;
+					margin-top: 0px;
+					margin-left: 0px;
 				}
 
 					.row > * {
-						padding: 50px 0 0 50px;
+						padding: 0 12.5px 0 12.5px;
 					}
 
 					.row.gtr-uniform {
@@ -1386,12 +1386,12 @@ input, select, textarea {
 						}
 
 				.row {
-					margin-top: -30px;
-					margin-left: -30px;
+					margin-top: 0px;
+					margin-left: 0px;
 				}
 
 					.row > * {
-						padding: 30px 0 0 30px;
+						padding: 0 15px 0 15px;
 					}
 
 					.row.gtr-uniform {
@@ -1619,7 +1619,7 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
-			margin: 0 0 2em 0;
+			margin: 0 0 0 0;
 		}
 
 /* Button */
@@ -1803,7 +1803,7 @@ input, select, textarea {
 	ul.actions {
 		list-style: none;
 		padding-left: 0;
-		margin: 3em 0 0 0;
+		margin: 0 0 0 0;
 	}
 
 		ul.actions li {
@@ -1831,7 +1831,7 @@ input, select, textarea {
 		margin-left: auto;
 		margin-right: auto;
 		position: relative;
-		top: 0.75em;
+		top: 0;
 	}
 
 		.feature-list section {
@@ -1852,7 +1852,7 @@ input, select, textarea {
 
 		.feature-list h3 {
 			color: #e97770 !important;
-			margin: -0.35em 0 0.75em 0;
+			margin: 0 0 0 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
 		}
@@ -1956,7 +1956,7 @@ input, select, textarea {
 
 	.wrapper {
 		position: relative;
-		padding: 6em 0 9em 0;
+		padding: 0 0 0 0;
 	}
 
 		.wrapper .title {
@@ -1967,7 +1967,7 @@ input, select, textarea {
 			text-transform: uppercase;
 			display: block;
 			font-weight: 700;
-			letter-spacing: 0.25em;
+			letter-spacing: 0.5em;
 			font-size: 0.9em;
 			width: 25em;
 			height: 3.25em;
@@ -1975,7 +1975,7 @@ input, select, textarea {
 			line-height: 3.25em;
 			margin-bottom: -3.25em;
 			margin-left: -12.5em;
-			padding-top: 0.5em;
+			padding-top: 0.25em;
 		}
 
 			.wrapper .title:before {
@@ -2078,17 +2078,17 @@ input, select, textarea {
 		}
 
 		.homepage #header {
-			height: 20em;
+			height: 15em;
 		}
 
 /* Logo */
 
-	#logo {
-		width: 100%;
-		text-align: center;
-		position: relative;
-		top: 2em;
-	}
+		#logo {
+			width: 100%;
+			text-align: center;
+			position: center;
+			top: auto;
+		}
 
 		#logo h1 {
 			font-weight: 900;
@@ -2113,23 +2113,23 @@ input, select, textarea {
 	#nav {
 		position: absolute;
 		display: block;
-		top: 2.5em;
-		left: 0;
-		width: 100%;
-		text-align: center;
+		top: 1.5em;
+		left: 1.5em;
+		width: 0;
+		text-align: left;
 	}
 
 		#nav > ul {
 			display: inline-block;
 			border-radius: 0.35em;
-			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-			padding: 0 1.5em 0 1.5em;
+			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.5);
+			padding: 0.25em 0.5em 0.25em 0.5em;
 		}
 
 			#nav > ul > li {
 				display: inline-block;
 				text-align: center;
-				padding: 0 1.5em 0 1.5em;
+				padding: 0 0.5em 0 0.5em;
 			}
 
 				#nav > ul > li > ul {
@@ -2142,10 +2142,10 @@ input, select, textarea {
 					color: rgba(255, 255, 255, 0.75);
 					text-transform: uppercase;
 					text-decoration: none;
-					font-size: 0.7em;
+					font-size: 0.75em;
 					letter-spacing: 0.25em;
-					height: 5em;
-					line-height: 5em;
+					height: 2.5em;
+					line-height: 2.5em;
 					-moz-transition: all .25s ease-in-out;
 					-webkit-transition: all .25s ease-in-out;
 					-o-transition: all .25s ease-in-out;
@@ -2213,7 +2213,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		padding-bottom: 8em;
+		padding-bottom: 0;
 		text-align: center;
 	}
 
@@ -2263,7 +2263,7 @@ input, select, textarea {
 
 		#highlights .highlight h3 {
 			color: #e97770;
-			margin: 0 0 0.75em 0;
+			margin: 0 0 0 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
 		}
@@ -2276,7 +2276,7 @@ input, select, textarea {
 		background: #111111 url("images/overlay.png");
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
-		padding-bottom: 1em;
+		padding-bottom: 0em;
 		padding-top: 0em;
 	}
 
@@ -2439,7 +2439,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			.wrapper {
-				padding: 4em 0 7em 0;
+				padding: 0 0 0 0;
 			}
 
 		/* Logo */
@@ -2455,7 +2455,7 @@ input, select, textarea {
 		/* Intro */
 
 			#intro {
-				padding-bottom: 7em;
+				padding-bottom: 0;
 			}
 
 				#intro p.style1 {
@@ -2469,7 +2469,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding-bottom: 1em;
+				padding-bottom: 0em;
 			}
 
 				#footer header.style1 {
@@ -2762,11 +2762,11 @@ input, select, textarea {
 			h2, h3, h4, h5, h6 {
 				font-size: 1.2em;
 				letter-spacing: 0.05em;
-				margin: 0 0 1em 0;
+				margin: 0 0 0 0;
 			}
 
 			hr {
-				margin: 1em 0 1em 0;
+				margin: 0 0 0 0;
 			}
 
 		/* Section/Article */
@@ -2813,7 +2813,7 @@ input, select, textarea {
 		/* Actions */
 
 			ul.actions {
-				margin: 2em 0 0 0;
+				margin: 0 0 0 0;
 			}
 
 				ul.actions li {
@@ -2852,7 +2852,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			.wrapper {
-				padding: 3em 0 6em 0;
+				padding: 0 0 0 0;
 			}
 
 				.wrapper .title {
@@ -2906,9 +2906,9 @@ input, select, textarea {
 
 			#intro {
 				text-align: center;
-				padding-right: 2em;
-				padding-left: 2em;
-				padding-bottom: 5em;
+				padding-right: 0;
+				padding-left: 0;
+				padding-bottom: 0;
 				margin: 0 auto;
 			}
 
@@ -2936,7 +2936,7 @@ input, select, textarea {
 		/* Content */
 
 			#content {
-				padding: 0 0 2em 0;
+				padding: 0 0 0 0;
 			}
 
 				#content header.style1 {
@@ -2946,7 +2946,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding-bottom: 1;
+				padding-bottom: 0;
 			}
 
 				#footer header.style1 {
@@ -2990,7 +2990,7 @@ input, select, textarea {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }

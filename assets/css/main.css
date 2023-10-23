@@ -3113,32 +3113,27 @@ input, select, textarea {
   margin-right: 0.25em;
 }
 
-.gamedesign
+.game
 {
-  background-color: #7c336c;
-  content: "Game Design";
+  background-color: #aa2a75;
 }
 
-.sounddesign
+.audio
 {
-  background-color: #337c7c;
-  content: "Sound Design";
+  background-color: #2aa6aa;
 }
 
-.programming
+.code
 {
-  background-color: #717c33;
-  content: "Programming";
+  background-color: #aa8c2a;
 }
 
 .art
 {
-  background-color: #337c4f;
-  content: "Art";
+  background-color: #2aaa5f;
 }
 
-.tools
+.misc
 {
-  background-color: #7c4433;
-  content: "Programming";
+  background-color: #772aaa;
 }

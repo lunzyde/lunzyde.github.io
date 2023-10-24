@@ -1,5 +1,5 @@
 /*
-	Bryan B. Bonilla Díaz (lunzyde) - Portfolio [main.js]
+	Bryan Bonilla Diaz (lunzyde) - Portfolio [main.js]
 	
 	Template used: Escape Velocity by HTML5 UP
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -95,4 +95,34 @@ function SlideShow(n) {
   }
   slides[slidePosition-1].style.display = "block";
   circles[slidePosition-1].className += " enable";
+}
+
+function playPauseVideo() {
+    let videos = document.querySelectorAll("video");
+    videos.forEach((video) => {
+        // We can only control playback without insteraction if video is mute
+        video.muted = true;
+        // Play is a promise so we need to check we have it
+        let playPromise = video.play();
+        if (playPromise !== undefined) {
+            playPromise.then((_) => {
+                let observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (
+                                entry.intersectionRatio !== 1 &&
+                                !video.paused
+                            ) {
+                                video.pause();
+                            } else if (video.paused) {
+                                video.play();
+                            }
+                        });
+                    },
+                    { threshold: 0 }
+                );
+                observer.observe(video);
+            });
+        }
+    });
 }

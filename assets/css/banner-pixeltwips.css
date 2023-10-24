@@ -1,5 +1,32 @@
-/* Banner Background for the PixelTwips page */
+/*
+	Bryan Bonilla Diaz (lunzyde) - Portfolio [banner-pixeltwips.css]
+	
+	Template used: Escape Velocity by HTML5 UP
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
-	#header {
-		background: url("../../images/banner_pixeltwips.png") center center;
+	/* Image banner setup */	
+	#header { background: url("../../images/banner_pixeltwips.png") center center; }
+
+	/* Video banner setup */
+	video { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; min-width: auto; height: auto; min-height: auto; background-size: cover; }
+
+	/* header filter goes above video */
+	@media screen and (max-width: 2579px) and (min-width: 981px) {
+		#header:before { z-index: 1; background: rgba(0, 0, 0, 0.40); }
+		#nav { z-index: 1; }
 	}
+
+	/* Video banner fill scaling up to 4k */
+	@media screen and (max-width: 2580px) and (min-width: 2380px) { video { top: -195%; } }
+	@media screen and (max-width: 2380px) and (min-width: 2180px) { video { top: -175%; } }
+	@media screen and (max-width: 2180px) and (min-width: 1980px) { video { top: -165%; } }
+	@media screen and (max-width: 1980px) and (min-width: 1680px) { video { top: -135%; } }
+	@media screen and (max-width: 1680px) and (min-width: 1480px) { video { top: -130%; } }
+	@media screen and (max-width: 1480px) and (min-width: 1280px) { video { top: -110%; } }
+	@media screen and (max-width: 1480px) and (min-width: 1080px) { video { top: -105%; } }
+	@media screen and (max-width: 1080px) and (min-width: 980px) { video { top: -85%; } }
+
+	/* If bigger than 4k or using in mobile, go back to image banner */
+	@media (min-width: 2580px) { video { display: none; } }
+	@media (max-width: 980px) { video { display: none; } }

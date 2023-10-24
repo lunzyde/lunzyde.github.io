@@ -12,7 +12,7 @@
 ### Template used: Escape Velocity by [HTML5 UP](https://html5up.net/)
 - Free for personal and commercial use under the CCA 3.0 license: [html5up.net/license](https://html5up.net/license)
 
-### For those who are interested in cloning, please make sure to read the following:
+### For those who are interested in cloning/forking, please make sure to read the following:
 - Feel free to clone this repository for both personal and commercial purposes.
 - Please retain and respect the original template's licensing terms (as listed above).
 - All content within my portfolio (including text, images, videos, etc.) must be completely removed.

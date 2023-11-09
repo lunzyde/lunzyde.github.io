@@ -14,7 +14,7 @@
 	/* header filter goes above video */
 	@media screen and (max-width: 2579px) and (min-width: 981px) {
 		#header:before { z-index: 1; background: rgba(0, 0, 0, 0.40); }
-		#nav { z-index: 1; }
+		#nav { z-index: 1; } #logo { z-index: 1; }
 	}
 
 	/* Video banner fill scaling up to 4k */

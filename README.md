@@ -16,5 +16,4 @@
 - Feel free to use my modified version of the template for both personal and commercial purposes.
 - Please retain and respect the original template's licensing terms (as listed above).
 - All content within my portfolio (including text, images, videos, etc.) must be completely removed.
-- I encouraged you to personalize it with your own content to make it unique to your own identity.
-- While not required, it would be greatly appreciated if you acknowledge the source of the original template.
+- I encouraged you to personalize it with your content to make it unique to your own identity.

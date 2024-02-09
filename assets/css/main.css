@@ -32,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	display: grid;
+	grid-template-columns: auto 0px;
 }
 
 ol, ul {
@@ -81,6 +83,9 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+
+		/* this will auto-scroll when using anchor links*/
+		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
@@ -147,9 +152,30 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-top: solid 5px #dddddd75;
+		border-top: solid 5px #dddddd75; /* default */
 		margin: 0 0 0 0;
 	}
+
+	/* hr styles */
+	hr.none { border-top: solid 0px #dddddd00 }
+	hr.nav { border-top: solid 3.5px #ffffff10; margin: 0 15px 0 15px; } /* Only for mobile Nav panel use */
+	hr.thin { border-top: solid 2.5px #dddddd75; }
+	hr.thick { border-top: solid 10px #dddddd75; }
+	
+	/* 10 Opacity - Generally used for sections with dark background colors */
+	hr.thin10 { border-top: solid 2.5px #dddddd10; }
+	hr.normal10 { border-top: solid 5px #dddddd10; }
+	hr.thick10 { border-top: solid 10px #dddddd10; }
+
+	/* 25 Opacity - Used with dark background colors but to emphasize something */
+	hr.thin25 { border-top: solid 2.5px #dddddd25; }
+	hr.normal25 { border-top: solid 5px #dddddd25; }
+	hr.thick25 { border-top: solid 10px #dddddd25; }
+
+	/* 50 Opacity */
+	hr.thin50 { border-top: solid 2.5px #dddddd50; }
+	hr.normal50 { border-top: solid 5px #dddddd50; }
+	hr.thick50 { border-top: solid 10px #dddddd50; }
 
 	sub {
 		position: relative;
@@ -1524,7 +1550,7 @@ input, select, textarea {
 		-webkit-transition: all .25s ease-in-out;
 		-ms-transition: all .25s ease-in-out;
 		transition: all .25s ease-in-out;
-		-webkit-appearance: none;
+		/* -webkit-appearance: none; --- This line came with the template, while it may not cause anything, it always throws alerts on debug. */ 
 		display: block;
 		border: 0;
 		background: #eee;
@@ -1622,7 +1648,7 @@ input, select, textarea {
 			margin: 0 0 0 0;
 		}
 
-/* Button */
+/* Button - Each banner css file has the colors of these buttons to be changed based on the coloring of the banner (Hence the commented lines).*/
 
 	input[type="button"],
 	input[type="submit"],
@@ -1634,7 +1660,7 @@ input, select, textarea {
 		-ms-transition: all .25s ease-in-out;
 		transition: all .25s ease-in-out;
 		display: inline-block;
-		background: #444;
+		/* background: #444; */
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -1655,9 +1681,9 @@ input, select, textarea {
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		button:hover,
-		.button:hover {
+		/* .button:hover {
 			background-color: #f98780;
-		}
+		} */
 
 		input[type="button"].large,
 		input[type="submit"].large,
@@ -1672,77 +1698,77 @@ input, select, textarea {
 		input[type="submit"].style1,
 		input[type="reset"].style1,
 		button.style1,
-		.button.style1 {
+		/* .button.style1 {
 			background: #cf6761 url("images/overlay.png");
 			color: #fff;
-		}
+		} */
 
 			input[type="button"].style1:hover,
 			input[type="submit"].style1:hover,
 			input[type="reset"].style1:hover,
 			button.style1:hover,
-			.button.style1:hover {
+			/* .button.style1:hover {
 				background-color: #f98780;
-			}
+			} */
 
 			input[type="button"].style1:active,
 			input[type="submit"].style1:active,
 			input[type="reset"].style1:active,
 			button.style1:active,
-			.button.style1:active {
+			/* .button.style1:active {
 				background-color: #d96760;
-			}
+			} */
 
 		input[type="button"].style2,
 		input[type="submit"].style2,
 		input[type="reset"].style2,
 		button.style2,
-		.button.style2 {
+		/* .button.style2 {
 			background: none;
 			color: #606167;
 			box-shadow: inset 0px 0px 2px 0px #a0a1a7;
-		}
+		} */
 
 			input[type="button"].style2:hover,
 			input[type="submit"].style2:hover,
 			input[type="reset"].style2:hover,
 			button.style2:hover,
-			.button.style2:hover {
+			/* .button.style2:hover {
 				box-shadow: inset 0px 0px 2px 0px #606167;
-			}
+			} */
 
 			input[type="button"].style2:active,
 			input[type="submit"].style2:active,
 			input[type="reset"].style2:active,
 			button.style2:active,
-			.button.style2:active {
+			/* .button.style2:active {
 				box-shadow: inset 0px 0px 2px 0px #202127;
-			}
+			} */
 
 		input[type="button"].style3,
 		input[type="submit"].style3,
 		input[type="reset"].style3,
 		button.style3,
-		.button.style3 {
+		/* .button.style3 {
 			background: #000000 url("images/overlay.png");
 			color: #fff;
-		}
+		} */
 
 			input[type="button"].style3:hover,
 			input[type="submit"].style3:hover,
 			input[type="reset"].style3:hover,
 			button.style3:hover,
-			.button.style3:hover {
+			/* .button.style3:hover {
 				background-color: #554141;
-			}
+			} */
 
 			input[type="button"].style3:active,
 			input[type="submit"].style3:active,
 			input[type="reset"].style3:active,
 			button.style3:active,
-			.button.style3:active {
+			/* .button.style3:active {
 				background-color: #1f232b;
-			}
+			} */
 
 /* List */
 
@@ -1824,7 +1850,7 @@ input, select, textarea {
 			text-align: center;
 		}
 
-/* Feature List */
+/* Feature List - Each banner css file has the color of the h3 to be changed based on the coloring of the banner (Hence the commented lines).*/
 
 	.feature-list {
 		max-width: 58em;
@@ -1851,7 +1877,7 @@ input, select, textarea {
 		}
 
 		.feature-list h3 {
-			color: #e97770 !important;
+			/* color: #e97770 !important; */
 			margin: 0 0 0 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
@@ -2013,6 +2039,10 @@ input, select, textarea {
 				color: #fff;
 			}
 
+			.wrapper.style1.dark {
+				background: #111111 url("images/overlay.png");
+			}
+
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
 				color: #fff;
 			}
@@ -2113,17 +2143,14 @@ input, select, textarea {
 	#nav {
 		position: absolute;
 		display: block;
-		top: 1.5em;
-		left: 1.5em;
-		width: 0;
-		text-align: left;
+		bottom: 0em;
+		width: 100%;
+		text-align: center;
 	}
 
 		#nav > ul {
-			display: inline-block;
-			border-radius: 0.35em;
-			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.5);
-			padding: 0.25em 0.5em 0.25em 0.5em;
+			padding-top: 0.1em;
+			padding-bottom: 0.1em;
 		}
 
 			#nav > ul > li {
@@ -2153,6 +2180,8 @@ input, select, textarea {
 					transition: all .25s ease-in-out;
 					outline: 0;
 				}
+
+				#nav > ul > li > a.currentpage { color: rgba(255, 255, 255); font-weight: bold; }
 
 				#nav > ul > li:hover > a {
 					color: #fff;
@@ -2255,14 +2284,14 @@ input, select, textarea {
 		margin-top: 5em;
 	}
 
-/* Highlights */
+/* Highlights - Each banner css file has the color of the h3 to be changed based on the coloring of the banner (Hence the commented lines).*/
 
 	#highlights .highlight {
 		text-align: center;
 	}
 
 		#highlights .highlight h3 {
-			color: #e97770;
+			/* color: #e97770; */
 			margin: 0 0 0 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
@@ -2375,33 +2404,28 @@ input, select, textarea {
 
 	#copyright {
 		text-align: center;
-		padding-top: 6em;
-		margin-top: 6em;
-		border-top: solid 1px rgba(255, 255, 255, 0);
+		font-size: 95%;
 	}
 
 		#copyright ul {
-			display: inline-block;
-			border-radius: 0.35em;
-			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0);
-			color: rgb(0, 0, 0);
-			color: rgba(0, 0, 0, 0.753);
-			padding: 0.75em 2em;
-			font-size: 0.9em;
+			color: rgba(255, 255, 255, 0.55);
+			margin: 0.25em;
+			padding-left: 0;
 		}
 
 			#copyright ul li {
 				display: inline-block;
-				margin-left: 1em;
-				padding-left: 1em;
-				border-left: solid 1px #333;
-				border-left-color: rgba(0, 0, 0, 0);
+				margin-left: 0;
+				padding-left: 0.65em;
+				padding-right: 0.5em;
+				border-left: solid 1px rgba(255, 255, 255, 0.1);
 			}
 
 				#copyright ul li:first-child {
 					border-left: 0;
 					margin-left: 0;
-					padding-left: 0;
+					padding-left: 0.5em;
+					padding-right: 0.5em;
 				}
 
 		#copyright a {
@@ -2409,7 +2433,7 @@ input, select, textarea {
 		}
 
 			#copyright a:hover {
-				color: rgb(255, 131, 131);
+				color: rgb(255, 255, 255);
 			}
 
 /* XLarge */
@@ -2477,13 +2501,6 @@ input, select, textarea {
 					margin-bottom: 1em;
 					border-bottom: solid 1px rgba(255, 255, 255, 0.05);
 				}
-
-		/* Copyright */
-
-			#copyright {
-				padding-top: 4em;
-				margin-top: 4em;
-			}
 
 	}
 
@@ -2685,6 +2702,7 @@ input, select, textarea {
 					font-size: 0.85em;
 					letter-spacing: 0.15em;
 					text-decoration: none;
+					letter-spacing: 5px;
 					height: 44px;
 					line-height: 44px;
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
@@ -2721,7 +2739,17 @@ input, select, textarea {
 				}
 
 				#navPanel .depth-0 {
+					color: #bbb;
+				}
+
+				#navPanel .depth-1 {
 					color: #fff;
+					font-weight: bold;
+				}
+
+				#navPanel .depth-2 {
+					color: #ffffff25;
+					text-align: center;
 				}
 
 			body.navPanel-visible #page-wrapper {
@@ -2744,7 +2772,30 @@ input, select, textarea {
 				-ms-transform: translateX(0);
 				transform: translateX(0);
 			}
+		
+		/* Copyright */
 
+		#copyright {
+			padding-top: 0;
+			border-top: 0;
+		}
+
+			#copyright ul {
+				width: 100%;
+			}
+
+				#copyright ul li {
+					display: block;
+					margin: 0.25em 0 0.25em 0;
+					border-left: 0;
+					padding: 0;
+				}
+
+					#copyright ul li:first-child {
+						margin-top: 0;
+						padding: 0;
+					}
+		
 	}
 
 /* Small */
@@ -2879,7 +2930,7 @@ input, select, textarea {
 			}
 
 				.homepage #header {
-					height: 20em;
+					height: 12.5em;
 				}
 
 		/* Logo */
@@ -2888,6 +2939,7 @@ input, select, textarea {
 				text-align: center;
 				padding-left: 2em;
 				padding-right: 2em;
+				width: 80%;
 			}
 
 				#logo h1 {
@@ -2960,30 +3012,6 @@ input, select, textarea {
 					padding-top: 0;
 				}
 
-		/* Copyright */
-
-			#copyright {
-				padding-top: 0;
-				margin-top: 4em;
-				border-top: 0;
-			}
-
-				#copyright ul {
-					padding: 1em 2em;
-					width: 100%;
-				}
-
-					#copyright ul li {
-						display: block;
-						margin: 0.5em 0 0 0;
-						border-left: 0;
-						padding: 0;
-					}
-
-						#copyright ul li:first-child {
-							margin-top: 0;
-						}
-
 	}
 	
 * {box-sizing:border-box}
@@ -2996,9 +3024,9 @@ input, select, textarea {
 }
 
 /* Make the images invisible by default */
-.Containers {
-  display: none;
-}
+.Containers, .Containers2, .Containers3, .Containers4,
+.Containers5, .Containers6, .Containers7, .Containers8,
+.Containers9, .Containers10 { display: none; }
 
 /* forward & Back buttons */
 .Back, .forward {
@@ -3007,11 +3035,11 @@ input, select, textarea {
   top: 48%;
   width: auto;
   margin-top: -23px;
-  padding: 17px;
-  color: grey;
+  padding: 15px;
+  color: rgb(125, 125, 125);
   font-weight: bold;
-  font-size: 19px;
-  transition: 0.4s ease;
+  font-size: 20px;
+  transition: 0.5s ease;
   border-radius: 0 5px 5px 0;
   user-select: none;
 }
@@ -3019,69 +3047,86 @@ input, select, textarea {
 /* Place the "forward button" to the right */
 .forward {
   right: 0;
-  border-radius: 4px 0 0 4px;
+  border-radius: 5px 0 0 5px;
 }
 
 /*when the user hovers,add a black background with some little opacity */
 .Back:hover, .forward:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.5);
+  color: rgb(255, 255, 255, 0.75);
 }
 
 /* Caption Info */
-.Info {
+.Info, .Info_PosR, .Info_Cent {
 	color: #ffffff;
-	font-size: 125%;
-	padding-top: 0.5%;
-	padding-bottom: 0.5%;
-	padding-left: 2.5%;
-	padding-right: 2.5%;
+	font-size: 18px;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	padding-left: 15px;
+	padding-right: 15px;
 	position: absolute;
 	bottom: 5%;
 	width: auto;
 	text-align: center;
-	background-color: #0000008a;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.Info_PosR {
-	right: 0%;
-}
+.Info_PosR { right: 0% }
+.Info_Cent { width: 100%; }
 
 /* Worknumbering (1/3 etc) */
-.MessageInfo {
+.MessageInfo, .MessageInfo_PosR {
 	color: #ffffff;
-	font-size: 100%;
-	padding-top: 0.5%;
-	padding-bottom: 0.5%;
-	padding-left: 1%;
-	padding-right: 1%;
+	font-size: 16px;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	padding-left: 10px;
+	padding-right: 10px;
 	position: absolute;
 	top: 0;
 	width: auto;
-	background-color: #0000008a;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
+.MessageInfo_PosR { right: 0% }
+
 /* The circles or bullets and indicators */
-.dots {
+.dots, .dots2, .dots3, .dots4, .dots5,
+.dots6, .dots7, .dots8, .dots9, .dots10 {
   cursor: pointer;
-  height: 16px;
-  width: 16px;
+  height: 15px;
+  width: 15px;
   margin: 0 3px;
-  background-color: #acc;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.5s ease;
 }
 
-.enable, .dots:hover {
-  background-color: #717161;
-}
+/* Light Colors for .dots */
+#light .dots, #light .dots2, #light .dots3, #light .dots4,
+#light .dots5, #light .dots6, #light .dots7, #light .dots8,
+#light .dots9, #light .dots10 { background-color: #afafaf; }
+
+#light .enable, #light .dots:hover, #light .dots2:hover, #light .dots3:hover,
+#light .dots4:hover, #light .dots5:hover, #light .dots6:hover, #light .dots7:hover,
+#light .dots8:hover, #light .dots9:hover, #light .dots10:hover { background-color: #505050; }
+
+/* Dark Colors for .dots */
+#dark .dots, #dark .dots2, #dark .dots3, #dark .dots4,
+#dark .dots5, #dark .dots6, #dark .dots7, #dark .dots8,
+#dark .dots9, #dark .dots10 { background-color: #707070; }
+
+#dark .enable, #dark .dots:hover, #dark .dots2:hover, #dark .dots3:hover,
+#dark .dots4:hover, #dark .dots5:hover, #dark .dots6:hover, #dark .dots7:hover,
+#dark .dots8:hover, #dark .dots9:hover, #dark .dots10:hover { background-color: #eeeeee; }
+
 
 /* Faint animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.4s;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.4s;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
@@ -3094,10 +3139,12 @@ input, select, textarea {
   to {opacity: 2}
 }
 
+/* For self-portrait in home page*/
 .avatar { 
 	border-radius: 50%; 
 }
 
+/* These are the colored tags describing roles and tools */
 .label
 {
   border-radius: 5px;
@@ -3120,12 +3167,12 @@ input, select, textarea {
 
 .audio
 {
-  background-color: #2aa6aa;
+  background-color: #2aa5aa;
 }
 
 .code
 {
-  background-color: #aa8c2a;
+  background-color: #bb9900;
 }
 
 .art
@@ -3135,5 +3182,81 @@ input, select, textarea {
 
 .misc
 {
-  background-color: #772aaa;
+  background-color: #8525bf;
 }
+
+/* Back to Top Stuff */
+.top
+{
+  --offset: 175px; 
+  
+  position: sticky;
+  bottom: 20px;      
+  margin-right: 20px; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  
+  /* visual styling */
+  text-decoration: none;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  line-height: 47.5px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 50px;
+  white-space: nowrap;
+  font-size: 125%;
+}
+
+@media (max-width: 980px) { 
+	.top { 
+		bottom: 6px;
+		margin-right: 6px;
+		width: 54px;
+		height: 38px;
+		line-height: 38px;
+		border-radius: 0.25em;
+		background: rgba(25, 25, 25, 0.75);
+		font-size: 14px;
+	}
+}
+
+/* For YouTube, iframe videos, or videos to keep their aspect ratio */
+iframe, video.workpreview { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+
+/* Text formatting Classes */
+.text-upcent { text-transform: uppercase; text-align: center; }
+.text-up { text-transform: uppercase; }
+.text-cent { text-align: center; }
+
+.text-lspace2half { letter-spacing: 2.5px; }
+.text-lspace5 { letter-spacing: 5px; }
+.text-lspace10 { letter-spacing: 10px; }
+.text-lspace15 { letter-spacing: 15px; }
+.text-lspace20 { letter-spacing: 20px; }
+.text-lspace25 { letter-spacing: 25px; }
+
+.text-lheight125 { line-height: 1.25; }
+.text-lheight150 { line-height: 1.50; }
+.text-lheight175 { line-height: 1.75; }
+.text-lheight200 { line-height: 2.00; }
+
+a.cgrey, abbr.cgrey, u.cgrey { text-decoration-color: #b7b7b7 } /* To change hyperlink, abbreviation, or underline lines on white backgrounds in specific occasions */
+span.vertbar { color: #dddddd50; font-weight: bold;} /* For specific vertical bars that separate certain content */
+
+/* Padding pixel adjustment Classes */
+.pad-b5 { padding-bottom: 5px; }
+.pad-b10 { padding-bottom: 10px; }
+.pad-b15 { padding-bottom: 15px; }
+.pad-b20 { padding-bottom: 20px; }
+.pad-b25 { padding-bottom: 25px; }
+.pad-b50 { padding-bottom: 50px; }
+
+.pad-t5 { padding-top: 5px; }
+.pad-t10 { padding-top: 10px; }
+.pad-t15 { padding-top: 15px; }
+.pad-t20 { padding-top: 20px; }
+.pad-t25 { padding-top: 25px; }
+.pad-t50 { padding-top: 50px; }

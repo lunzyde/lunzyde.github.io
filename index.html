@@ -7,8 +7,17 @@
 -->
 <html>
 	<head>
-		<title>Bryan Bonilla Diaz - Game & Sound Design Portfolio - Home</title>
-		<link rel="icon" type="image/x-icon" href="/images/GitHub.png">
+		<title>Bryan Bonilla Diaz - Game & Sound Design Portfolio</title>
+		<link rel="icon" type="image/x-icon" href="/media/images/lunzydeicon.png">
+		<meta name="author" content="Bryan Bonilla Diaz">
+		<meta name="description" content="The portfolio webpage of game and sound designer, Bryan Bonilla Diaz.">
+		
+		<meta property="og:title" content="Bryan Bonilla Diaz - Game & Sound Design Portfolio">
+		<meta property="og:description" content="The portfolio webpage of game and sound designer, Bryan Bonilla Diaz.">
+		<meta property="og:url" content="https://lunzyde.github.io/">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://lunzyde.github.io/media/images/Bryan.jpeg">
+
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -21,55 +30,86 @@
 			<section id="header" class="wrapper">
 
 				<!-- Logo -->
-				<div id="logo"><a class="image"><img src="images/lunzydelogo.png" alt="" /></a></div>
+				<div id="logo"><a class="image"><img src="media/images/lunzydelogo.png" alt="The logo for lunzyde" /></a></div>
+
+				<!-- Background Video -->
+				<div><video autoplay loop muted id="pauseoutbounds" class="banner">
+					<source src="media/videos/Index_VideoBanner.webm" type="video/webm">
+					<source src="media/videos/Index_VideoBanner.mp4" type="video/mp4">
+				</video></div>
 
 				<!-- Nav -->
 				<nav id="nav">
 					<ul>
-						<li><a href="/" style="font-weight: 700;"><u>Home</u></a></li>
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="audiowork.html">Audio Work</a></li>
-						<li><a href="about.html">About</a></li>
+						<li><a class="currentpage"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+						<li><a href="work.html"><i class="fas fa-briefcase" aria-hidden="true"></i> Work</a></li>
+						<li><a href="cv.html"><i class="fas fa-book" aria-hidden="true"></i> CV</a></li>
+						<li><a href="about.html"><i class="fas fa-user" aria-hidden="true"></i> About</a></li>
+						<li>|</li>
+						<li><span>Jump To:</span></li>
+						<li><a href="#featuredprojects">Featured Projects</a></li>
 					</ul>
 				</nav>
 
 			</section>
 
-			<!-- Title -->
-			<section id="intro" class="wrapper style1"><div class="title">Home</div></section>
-
 			<!-- Intro -->
 			<section id="intro" class="wrapper style1">
-				<div class="container">
-					<br>
+				<div class="container pad-t15 pad-b15">
 					<div class="row aln-center">
+						
 						<!-- Picture -->
-						<div class="col-2 col-4-small"><a class="image aln-center"><img class="avatar"src="images/Bryan.jpeg" alt=""/></a></div>
+						<div class="col-2 col-3-small" style="align-self: center;">
+							<a class="image"><img class="avatar" src="media/images/Bryan.jpeg" alt="Headshot photograph of Bryan Bonilla Diaz"/></a></div>
+						
 						<!-- About Section -->
-						<div style="align-self: center;">	
-								<span style="font-size: 150%;"><strong>
-									<span class="label game" style="margin-right: 0px; margin-bottom: 0px; padding-top: 0px;padding-bottom: 0px; font-size: 100%;">GAME</span> & 
-									<span class="label audio" style="margin-right: 0px; margin-bottom: 0px; padding-top: 0px;padding-bottom: 0px; font-size: 100%;">SOUND</span> DESIGNER!
-								</strong></span>
-								<br><span>My name is <strong>Bryan</strong>, also known as <strong>lunzyde</strong>!</span><br>
-								<a href="about.html" class="button style3 large" style="margin-top: 2.5%;">Learn more about me</a>
+						<div style="align-self: center; text-align: left;">
+								
+							<!-- Header Text -->
+							<h3 class="text-up pad-b5" style="font-size: 175%;">Bryan Bonilla Diaz</h3>
+							<p class="text-up pad-b5" style="font-size: 125%;"><b>
+								<span class="label game" style="margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; font-size: 100%;">Game</span> & 
+								<span class="label audio" style="margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; font-size: 100%;">Sound</span> Designer
+							</b></p>
+							<!-- Sub-header Text -->
+							<h4 class="pad-b5" style="font-size: 105%;">Also known as lunzyde!</h4>
+								
+							<!-- 2nd Sub-header Random Text -->
+							<p style="font-size: 85%;">Fun Fact: <script type='text/javascript'>
+								function RandTxt(){ var txt=new Array()
+								
+									txt[0]="Refresh this page for another fun fact! 🤩"
+									txt[1]="I'm manually coding this portfolio. 😉"
+									txt[2]="I used to make mods for AudioSurf 2. 👾"
+									txt[3]="Daft Punk ignited my interest in audio. 🤖"
+									txt[4]="My first game engine was RPG Maker. 🏰"
+									
+									var rand=Math.floor(Math.random()*txt.length)
+									document.write(txt[rand]) }
+								RandTxt()
+							</script></p>
+
 						</div>
+
 					</div>
-					<br>
 				</div>
 			</section>
-		
-			<!-- Highlights -->
-			<section id="highlights" class="wrapper style2">				
-				<div class="container">
+
+			<!-- Featured Projects -->
+			<section id="featuredprojects" class="wrapper style2">				
+				<div class="container pad-t15 pad-b25">
+					
+					<h3 class="text-upcent pad-t10 pad-b10 text-lspace5 text-lheight125" style="font-size: 150%;">Featured Projects</h3>
+					<hr class="thick50 pad-t25">
 
 					<!-- PixelTwips -->
-					<br>
-					<div class="row aln-center">
-						<!-- Video -->	
-						<div class="col-6 col-12-medium">
-							<iframe width="100%" height="360" src="https://www.youtube.com/embed/HALwQL1We_o" title="PixelTwips - Launch Gameplay Trailer (2021)" frameborder="0" 
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<div class="row aln-center pad-t10 pad-b25">
+						<!-- Media -->	
+						<div class="col-6 col-9-medium col-11-small pad-b10">
+							<video autoplay loop muted id="pauseoutbounds" class="workpreview">
+								<source src="media/videos/PixelTwips_WorkPreview.webm" type="video/webm">
+								<source src="media/videos/PixelTwips_WorkPreview.webm" type="video/mp4">
+							</video>
 						</div>
 						<!-- Info -->	
 						<div class="col-6 col-12-medium">	
@@ -94,22 +134,101 @@
 								</ul>
 
 								<ul class="actions" style="margin-top: 2.5%;">
-								<li><a href="https://lunzyde.itch.io/pixeltwips" class="button style1">Itch.io Page</a></li>
-								<li><a href="pixeltwips.html" class="button style2">Info Coming Soon</a></li></ul>
+									<!-- <li><a href="work/pixeltwips.html" class="button style1">Learn More</a></li> -->
+									<li><a href="https://lunzyde.itch.io/pixeltwips" class="button style1">
+									<i class="fab fa-itch-io fa-lg"></i> Itch.io</a></li></ul>
 								
 							</section>
 						</div>	
 					</div>
-					<br>
+
+					<hr>
+
+					<!-- Bird Watch -->
+					<div class="row aln-center pad-t25 pad-b25">
+						<!-- Media -->	
+						<div class="col-6 col-9-medium col-11-small pad-b10">
+							<iframe src="https://www.youtube.com/embed/4Osn4gSq3FA?rel=0" title="Bird Watch: Central Park Trailer" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</div>
+						<!-- Info -->	
+						<div class="col-6 col-12-medium">
+							<section class="highlight; feature-list">
+								
+								<h3 style="font-size: 175%;">Bird Watch: Central Park</h3>
+								<h4>by CelleC Games</h4>
+								<p style="font-size: 90%;"><strong><i>Release Date: TBD</i></strong></p>
+
+								<p style="font-size: 90%;"><b>Roles:</b> <span class="label code">Blueprints</span> <span class="label audio">Sound Design</span> 
+									<span class="label audio">Music Production</span></p> 
+								<p style="font-size: 90%;"><b>Tools:</b> <span class="label game">Unreal Engine 5</span> <span class="label audio">FL Studio</span> 
+									<span class="label audio">iZotope RX Elements</span> <span class="label audio">Krotos Studio</span></p>
+
+								<ul style="font-size: 85%;">
+									<li>Implemented audio assets with sound cues, attenuations, and blueprint systems.</li>
+									<li>Sourced authentic recordings of bird sounds from the
+										<a href="https://www.macaulaylibrary.org/product/the-cornell-guide-to-bird-sounds-us-and-canada/">Macaulay Library by Cornell Lab of Ornitology</a>, 
+										as well as modified them to create multiple short cues and remove unwanted background noise. Additionally, I recorded various objects and modified 
+										them to accomplish the intended sounds.</li>
+									<li>Composed and produced the music for the original soundtrack.</li>
+								</ul>
+
+								<ul class="actions" style="margin-top: 2.5%;">
+									<!-- <li><a href="work/birdwatch.html" class="button style1">Learn More</a></li> -->
+									<li><a href="https://store.steampowered.com/app/2327740/Bird_Watch_Central_Park/" class="button style1">
+										<i class="fab fa-steam fa-lg"></i> Steam</a></li>
+									<li><a href="https://soundcloud.com/lunzyde/sets/bird-watch-central-park-original-soundtrack/s-3Yny40kTZpZ" class="button style1">
+										<i class="fab fa-soundcloud fa-lg"></i> Soundtrack</a></li></ul>
+
+								
+							</section>
+						</div>	
+					</div>
+
+					<hr>
+
+					<!-- Mini-Tank -->
+					<div class="row aln-center pad-t25 pad-b25">
+						<!-- Media -->	
+						<div class="col-6 col-9-medium col-11-small pad-b10">
+							<video autoplay loop muted id="pauseoutbounds" class="workpreview">
+								<source src="media/videos/MTA_WorkPreview.webm" type="video/webm">
+								<source src="media/videos/MTA_WorkPreview.mp4" type="video/mp4">
+							</video>
+						</div>
+						<!-- Info -->	
+						<div class="col-6 col-12-medium">	
+							<section class="highlight; feature-list">
+								
+								<h3 style="font-size: 175%;">Mini-Tank Arena</h3>
+								<h4>In collaboration with Zygobot</h4>
+								<p style="font-size: 90%;"><strong><i>Release Date: TBD</i></strong></p>
+
+								<p style="font-size: 90%;"><b>Roles:</b> <span class="label code">Blueprints</span> <span class="label audio">Sound Design</span> 
+									<span class="label art">UI</span> <span class="label misc">QA</span></p> 
+								<p style="font-size: 90%;"><b>Tools:</b> <span class="label game">Unreal Engine 5</span> <span class="label audio">REAPER</span> 
+									<span class="label art">Adobe XD</span></p>
+
+								<ul style="font-size: 85%;">
+									<li>Creating unique sound effects for the toy-like appearance of each tank.</li>
+									<li>Implementing audio assets while verifying the replication of the gameplay sounds.</li>
+									<li>Providing help with UI prototypes and testing gameplay in multiplayer sessions.</li>
+								</ul>
+
+								<ul class="actions" style="margin-top: 2.5%;">
+									<li><a class="button style2"><i class="fab fa-steam fa-lg"></i> Coming Soon</a></li></ul>
+								
+							</section>
+						</div>	
+					</div>
 
 					<hr>
 
 					<!-- Behbes Adventure! -->
-					<br>
-					<div class="row aln-center">
-						<!-- Video -->	
-						<div class="col-6 col-12-medium">
-							<iframe width="100%" height="360" src="https://www.youtube.com/embed/le2y_3pBq5g" title="Behbes Adventures Tech Demo in Itch.io Trailer" frameborder="0" 
+					<div class="row aln-center pad-t25 pad-b25">
+						<!-- Media -->	
+						<div class="col-6 col-9-medium col-11-small pad-b10">
+							<iframe src="https://www.youtube.com/embed/udUg67uUlKc?rel=0" title="Behbes Adventure! (Tech Demo) - Sound Design Reel" frameborder="0" 
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 						</div>
 						<!-- Info -->	
@@ -132,264 +251,45 @@
 								</ul>
 
 								<ul class="actions" style="margin-top: 2.5%;">
-								<li><a href="https://amasbehbes.itch.io/behbes-adventures" class="button style1">Itch.io Page</a></li></ul>
+								<li><a href="https://amasbehbes.itch.io/behbes-adventures" class="button style1">
+									<i class="fab fa-itch-io fa-lg"></i> Itch.io</a></li></ul>
 								
 							</section>
 						</div>	
 					</div>
-					<br>
 
-					<hr>
-
-					<!-- Bird Watch -->
-					<br>
-					<div class="row aln-center">
-						<!-- Video -->	
-						<div class="col-6 col-12-medium">
-							<iframe width="100%" height="360" src="https://www.youtube.com/embed/4Osn4gSq3FA" title="Bird Watch: Central Park Trailer" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</div>
-						<!-- Info -->	
-						<div class="col-6 col-12-medium">
-							<section class="highlight; feature-list">
-								
-								<h3 style="font-size: 175%;">Bird Watch: Central Park</h3>
-								<h4>by CelleC Games</h4>
-								<p style="font-size: 90%;"><strong><i>Release Date: TBD</i></strong></p>
-
-								<p style="font-size: 90%;"><b>Roles:</b> <span class="label code">Blueprints</span> <span class="label audio">Sound Design</span> 
-									<span class="label audio">Music Production</span></p> 
-								<p style="font-size: 90%;"><b>Tools:</b> <span class="label game">Unreal Engine 5</span> <span class="label audio">FL Studio</span> 
-									<span class="label audio">RX Elements</span> <span class="label audio">Krotos Studio</span></p>
-
-								<ul style="font-size: 85%;">
-									<li>Implemented audio assets with sound cues, attenuations, and blueprint systems.</li>
-									<li>Sourced authentic recordings of bird sounds from the
-										<a href="https://www.macaulaylibrary.org/product/the-cornell-guide-to-bird-sounds-us-and-canada/">Macaulay Library by Cornell Lab of Ornitology</a>, 
-										as well as modified them to create multiple short cues and remove unwanted background noise. Additionally, I recorded various objects and modified 
-										them to accomplish the intended sounds.</li>
-									<li>Composed and produced the music for the original soundtrack.</li>
-								</ul>
-
-								<ul class="actions" style="margin-top: 2.5%;">
-								<li><a href="https://store.steampowered.com/app/2327740/Bird_Watch_Central_Park/" class="button style1">Steam Page</a></li>
-								<li><a class="button style2">Info Coming Soon</a></li></ul>
-								
-							</section>
-						</div>	
-					</div>
-					<br>
-
-					<hr>
-
-					<!-- Mini-Tank -->
-					<br>
-					<div class="row aln-center">
-						<!-- Video -->	
-						<div class="col-6 col-12-medium">
-							<iframe width="100%" height="360" src="https://www.youtube.com/embed/paWCKvtvrtA" title="MTA Gameplay Trailer 10/19/23" frameborder="0" 
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</div>
-						<!-- Info -->	
-						<div class="col-6 col-12-medium">	
-							<section class="highlight; feature-list">
-								
-								<h3 style="font-size: 175%;">Mini-Tank Arena</h3>
-								<h4>In collaboration with Zygobot</h4>
-								<p style="font-size: 90%;"><strong><i>Release Date: TBD</i></strong></p>
-
-								<p style="font-size: 90%;"><b>Roles:</b> <span class="label code">Blueprints</span> <span class="label audio">Sound Design</span> 
-									<span class="label art">UI</span> <span class="label misc">QA</span></p> 
-								<p style="font-size: 90%;"><b>Tools:</b> <span class="label game">Unreal Engine 5</span> <span class="label audio">REAPER</span> 
-									<span class="label audio">FL Studio</span> <span class="label art">Adobe XD</span></p>
-
-								<ul style="font-size: 85%;">
-									<li>Creating unique sound effects for the toy-like appearance of each tank.</li>
-									<li>Implementing audio assets while verifying the replication of the gameplay sounds.</li>
-									<li>Providing help with UI prototypes and testing gameplay in multiplayer sessions.</li>
-								</ul>
-
-								<ul class="actions" style="margin-top: 2.5%;">
-								<li><a class="button style2">Page & Info Coming Soon</a></li></ul>
-								
-							</section>
-						</div>	
-					</div>
-					<br>
-
-					<hr>
-
-					<!-- Pandamonium -->
-					<br>
-					<div class="row aln-center">
-						<!-- Video -->	
-						<div class="col-6 col-12-medium">
-							<iframe width="100%" height="360" src="https://www.youtube.com/embed/1AlpuYyf8vQ" title="Pandamonium - Short Sound Design Reel (March 2023)" frameborder="0" 
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</div>
-						<!-- Info -->
-						<div class="col-6 col-12-medium">	
-							<section class="highlight; feature-list">
-								
-								<h3 style="font-size: 175%;">Pandamonium</h3>
-								<h4>by Black Banshee Studios</h4>
-								<p style="font-size: 90%;"><strong><i>Release Date: April 2023</i></strong></p>
-
-								<p style="font-size: 90%;"><b>Roles:</b> <span class="label audio">Sound Design</span> <span class="label misc">QA</span></p>
-								<p style="font-size: 90%;"><b>Tools:</b> <span class="label audio">FL Studio</span></p>
-
-								<ul style="font-size: 85%;">
-									<li>Designed amusing yet ominous sounds and ambiance themes.</li>
-									<li>Provided audio assets rapidly to facilitate the fast development cycle.</li>
-									<li>Helped the dev team with long QA sessions to track bugs and issues.</li>
-								</ul>
-
-								<ul class="actions" style="margin-top: 2.5%;">
-								<li><a href="https://store.steampowered.com/app/2332170/Pandamonium/" class="button style1">Steam Page</a></li></ul>
-								
-							</section>
-						</div>	
-					</div>
-					<br>
-
-					<hr>
-
-					<!-- Inter Bayamón Internship -->
-					<br>
-					<div class="row aln-center">
-						<!-- Video -->	
-						<div class="col-6 col-12-medium">
-							<iframe width="100%" height="360" src="https://www.youtube.com/embed/DzU5ooqVUNI" title="Inter Bayamón Informatics Building Interactive Experience Gameplay (2020)" frameborder="0" 
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</div>
-						<!-- Info -->	
-						<div class="col-6 col-12-medium">	
-							<section class="highlight; feature-list">
-								
-								<h3 style="font-size: 150%;">Inter Bayamón Interactive Experience</h3>
-								<h4>In collaboration with the Informatics Department</h4>
-								<p style="font-size: 90%;"><strong><i>Delivered To Client: May 2020</i></strong></p>
-								
-								<p style="font-size: 90%;"><b>Roles:</b> <span class="label code">Blueprints</span> 
-									<span class="label game">Game Design</span> <span class="label game">Level Design</span> 
-									<span class="label audio">Music Production</span> <span class="label art">Pixel Art</span></p>
-								<p style="font-size: 90%;"><b>Tools:</b> <span class="label game">Unreal Engine 4</span> <span class="label audio">FL Studio</span> 
-									<span class="label art">Photoshop Elements</span></p>
-
-								<ul style="font-size: 85%;">
-									<li>Collaborated with a small team to develop an interactive experience, 
-									in which we recreated one of the buildings of the campus for players to explore.</li>
-									<li>Managed version control with GitHub to work remotely with the team.</li>
-									<li>Handled the blueprinting and created a simplistic 2D platformer mini-game.</li>
-								</ul>
-
-								<ul class="actions" style="margin-top: 2.5%;">
-								<li><a href="https://sway.office.com/bYRlOq9yhgC7lxto" class="button style1">Learn More</a></li></ul>
-								
-							</section>
-						</div>	
-					</div>
-					<br>
-
-					<hr>
-
-					<!-- Game Jam Highlights - Image Slideshow -->
-					<br>
-					<div class="row aln-center">
-						<div class="col-12 col-12-medium">
-							<section class="highlight">
-								
-								<h3 style="font-size: 175%;">Game Jam Highlights</h3>
-								<p>The following screenshots are from projects made during Game Jams in which I have contributed with programming, audio, visuals, and/or more.</p>
-
-							</section>
-						</div>
-					</div>
-					<br>
-
-					<!-- Slideshow container -->
-					<div class="slideshow-container fade">
-
-						<!-- Full images with numbers and message Info -->
-						<div class="Containers">
-							<div class="MessageInfo">1 / 6</div>
-							<img src="images/frostbound1.png" style="width:100%">
-							<div class="Info">FROST-BOUND | In-Game Level Design & Scenery</div>
-						</div>
-
-						<div class="Containers">
-							<div class="MessageInfo">2 / 6</div>
-							<img src="images/frostbound2.png" style="width:100%">
-							<div class="Info">FROST-BOUND | In-Game Level Design & Scenery</div>
-						</div>
-
-						<div class="Containers">
-							<div class="MessageInfo">3 / 6</div>
-							<img src="images/nilsolefey1.png" style="width:100%">
-							<div class="Info">C:/Documents/nil/sole/fey/run.exe | Gameplay Screenshot</div>
-						</div>
-
-						<div class="Containers">
-							<div class="MessageInfo">4 / 6</div>
-							<img src="images/nilsolefey2.png" style="width:100%">
-							<div class="Info">C:/Documents/nil/sole/fey/run.exe | Gameplay Screenshot</div>
-						</div>
-
-						<div class="Containers">
-							<div class="MessageInfo">5 / 6</div>
-							<img src="images/rrr1.png" style="width:100%">
-							<div class="Info">RRR: Rival Relationship Repairs | Gameplay Screenshot</div>
-						</div>
-
-						<div class="Containers">
-							<div class="MessageInfo">6 / 6</div>
-							<img src="images/rrr2.png" style="width:100%">
-							<div class="Info">RRR: Rival Relationship Repairs | Gameplay Screenshot</div>
-						</div>
-
-						<!-- Back and forward buttons -->
-						<a class="Back" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="forward" onclick="plusSlides(1)">&#10095;</a>
-					</div>
-
-					<!-- The circles/dots -->
-					<div style="text-align:center; padding-top: 1%;">
-						<span class="dots" onclick="currentSlide(1)"></span>
-						<span class="dots" onclick="currentSlide(2)"></span>
-						<span class="dots" onclick="currentSlide(3)"></span>
-						<span class="dots" onclick="currentSlide(4)"></span>
-						<span class="dots" onclick="currentSlide(5)"></span>
-						<span class="dots" onclick="currentSlide(6)"></span>
-					</div>
-					<br>
-
-					<hr>
-
-					<!-- Additional Projects button -->
-					<br>
-					<div class="row aln-center">
-						<div class="col-5 col-12-medium">
-							<section class="highlight">
-								<span style="font-size: 125%;"><strong>Looking for game related projects?</strong></span>
-								<ul class="actions" style="margin-top: 2.5%; margin-bottom: 2.5%;"><li><a href="projects.html" class="button style1 large">Check out all the Projects</a></li></ul>
-							</section>
-						</div>
-
-						<div class="col-5 col-12-medium">
-							<section class="highlight">
-								<span style="font-size: 125%;"><strong>Looking for audio related projects?</strong></span>
-								<ul class="actions" style="margin-top: 2.5%; margin-bottom: 2.5%;"><li><a href="audiowork.html" class="button style1 large">Check out all the Audio Work</a></li></ul>
-							</section>
-						</div>
-					</div>
-					<br>
 				</div>
 			</section>
 			
 			<!-- Footer -->
-			<section id="footer" class="wrapper"><br><div class="container; row aln-center"><p>© Bryan Bonilla Diaz</p></div><br></section>
+			<section id="footer" class="wrapper">
+				<div class="container pad-t15 pad-b15">
+					
+					<!-- Social icons goes here -->
+					<div id="copyright" style="margin-bottom: 0.75em; font-size: 150%;"><ul><li>
+						<a href="https://twitter.com/lunzyde"><i class="fab fa-twitter" title="Twitter"></i></a>&ensp;
+						<a href="https://www.linkedin.com/in/bryanbonilladiaz/"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a>&ensp;
+						<a href="mailto:bryanbonilladiaz@gmail.com"><i class="fa fa-envelope" title="Email"></i></a>&ensp;
+						<a href="https://github.com/lunzyde"><i class="fab fa-github" title="GitHub"></i></a>&ensp;
+						<a href="https://lunzyde.itch.io/"><i class="fab fa-itch-io" title="itch.io"></i></a>
+					</li></ul></div>
+
+					<!-- Legal stuff goes here -->
+					<div id="copyright">
+						<ul>
+							<li>© 2020-<script>document.write(new Date().getFullYear())</script> Bryan Bonilla Diaz</li>
+							<li><a href="https://github.com/lunzyde/lunzyde.github.io">Check out the repository of this portfolio!</a></li>
+
+						</ul>
+					</div>
+
+				</div>
+			</section>
 
 		</div>
+
+		<!-- Back to Top Button -->
+		<a href="#" class="top" title="Go back to the top!"><i class="fas fa-chevron-up" aria-hidden="true"></i></a>
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
@@ -398,6 +298,7 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/NavMob_Index.js"></script>
 
 	</body>
 </html>

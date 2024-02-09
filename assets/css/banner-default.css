@@ -6,4 +6,55 @@
 */
 
 	/* Image banner setup */
-	#header { background: url("../../images/banner.png") center center; }
+	#header { background: url("../../media/images/banner.jpg") center center; }
+
+	/* Video banner setup */
+	video.banner { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; min-width: auto; height: auto; min-height: auto; background-size: cover; }
+
+	/* Banner properties */
+	#header:before { background: rgba(0, 0, 0, 0.5); z-index: 0; } #nav { z-index: 0; } #nav ul { background: rgba(0,0,0,0.8); } #logo { filter: invert(1.0); z-index: 0; }
+	
+	/* Banner properties when the Video Banner should be displayed */
+	@media screen and (max-width: 2579px) and (min-width: 981px) { #header:before { z-index: 1; } #nav { z-index: 1; } #logo { z-index: 1; } }
+
+	/* Logo scaling up to 4k */
+	@media screen and (min-width: 1681px) { #logo { padding-bottom: 1.75em; } }
+	@media screen and (max-width: 1680px) and (min-width: 1281px) { #logo { width: 30em; padding-bottom: 1.5em; } }
+	@media screen and (max-width: 1280px) and (min-width: 981px) { #logo { width: 30em; padding-bottom: 1.25em; } }
+	
+	/* Video banner fill scaling up to 4k */
+	@media screen and (max-width: 2580px) and (min-width: 2380px) { video.banner { top: -195%; } }
+	@media screen and (max-width: 2380px) and (min-width: 2180px) { video.banner { top: -175%; } }
+	@media screen and (max-width: 2180px) and (min-width: 1980px) { video.banner { top: -165%; } }
+	@media screen and (max-width: 1980px) and (min-width: 1680px) { video.banner { top: -135%; } }
+	@media screen and (max-width: 1680px) and (min-width: 1480px) { video.banner { top: -130%; } }
+	@media screen and (max-width: 1480px) and (min-width: 1280px) { video.banner { top: -110%; } }
+	@media screen and (max-width: 1480px) and (min-width: 1080px) { video.banner { top: -105%; } }
+	@media screen and (max-width: 1080px) and (min-width: 980px) { video.banner { top: -85%; } }
+	
+	/* If bigger than 4k or using in mobile, go back to image banner */
+	@media (min-width: 2580px) { video.banner { display: none; } }
+	@media (max-width: 980px) { video.banner { display: none; } }
+
+	/* Page colors */
+
+		/* Headers */
+		.feature-list h3 { color: #e97080 !important; }
+		#highlights .highlight h3 { color: #e97080; }
+		.text-cfeat { color: #e97080; }
+
+		/* Buttons */
+		.button { background: #444; }
+		.button:hover { background-color: #f98090; }
+		
+		.button.style1 { background: #cf6070 url("images/overlay.png"); color: #fff; }
+			.button.style1:hover { background-color: #e98090;}
+			.button.style1:active { background-color: #b96075; }
+
+		.button.style2 { background: none; color: #676063; box-shadow: inset 0px 0px 2px 0px #a7a0a2; }
+			.button.style2:hover { box-shadow: inset 0px 0px 2px 0px #676063; }
+			.button.style2:active { box-shadow: inset 0px 0px 2px 0px #272024; }
+
+		.button.style3 { background: #000000 url("images/overlay.png"); color: #fff; }
+			.button.style3:hover { background-color: #554045; }
+			.button.style3:active { background-color: #251b1c; }

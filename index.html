@@ -10,10 +10,10 @@
 		<title>Bryan Bonilla Diaz - Game & Sound Design Portfolio</title>
 		<link rel="icon" type="image/x-icon" href="/media/images/lunzydeicon.png">
 		<meta name="author" content="Bryan Bonilla Diaz">
-		<meta name="description" content="The portfolio webpage of game and sound designer, Bryan Bonilla Diaz.">
+		<meta name="description" content="The portfolio of game and sound designer, Bryan Bonilla Diaz.">
 		
 		<meta property="og:title" content="Bryan Bonilla Diaz - Game & Sound Design Portfolio">
-		<meta property="og:description" content="The portfolio webpage of game and sound designer, Bryan Bonilla Diaz.">
+		<meta property="og:description" content="The portfolio of game and sound designer, Bryan Bonilla Diaz.">
 		<meta property="og:url" content="https://lunzyde.github.io/">
 		<meta property="og:type" content="website">
 		<meta property="og:image" content="https://lunzyde.github.io/media/images/Bryan.jpeg">
@@ -33,7 +33,7 @@
 				<div id="logo"><a class="image"><img src="media/images/lunzydelogo.png" alt="The logo for lunzyde" /></a></div>
 
 				<!-- Background Video -->
-				<div><video autoplay loop muted id="pauseoutbounds" class="banner">
+				<div><video autoplay loop muted disableRemotePlayback id="pauseoutbounds" class="banner">
 					<source src="media/videos/Index_VideoBanner.webm" type="video/webm">
 					<source src="media/videos/Index_VideoBanner.mp4" type="video/mp4">
 				</video></div>
@@ -42,19 +42,19 @@
 				<nav id="nav">
 					<ul>
 						<li><a class="currentpage"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
-						<li><a href="work.html"><i class="fas fa-briefcase" aria-hidden="true"></i> Work</a></li>
+						<li><a href="games.html"><i class="fas fa-gamepad" aria-hidden="true"></i> Games</a></li>
+						<li><a href="prototypes.html"><i class="fas fa-tools" aria-hidden="true"></i> Prototypes</a></li>
+						<li><a href="audio.html"><i class="fas fa-headphones" aria-hidden="true"></i> Audio</a></li>
+						<li><a href="misc.html"><i class="fas fa-briefcase" aria-hidden="true"></i> Misc</a></li>
 						<li><a href="cv.html"><i class="fas fa-book" aria-hidden="true"></i> CV</a></li>
 						<li><a href="about.html"><i class="fas fa-user" aria-hidden="true"></i> About</a></li>
-						<li>|</li>
-						<li><span>Jump To:</span></li>
-						<li><a href="#featuredprojects">Featured Projects</a></li>
 					</ul>
 				</nav>
 
 			</section>
 
 			<!-- Intro -->
-			<section id="intro" class="wrapper style1">
+			<section class="wrapper style1">
 				<div class="container pad-t15 pad-b15">
 					<div class="row aln-center">
 						
@@ -66,16 +66,13 @@
 						<div style="align-self: center; text-align: left;">
 								
 							<!-- Header Text -->
-							<h3 class="text-up pad-b5" style="font-size: 175%;">Bryan Bonilla Diaz</h3>
-							<p class="text-up pad-b5" style="font-size: 125%;"><b>
-								<span class="label game" style="margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; font-size: 100%;">Game</span> & 
-								<span class="label audio" style="margin-right: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; font-size: 100%;">Sound</span> Designer
-							</b></p>
+							<h1 class="text-up text-fs175 pad-b5 pad-t5">Bryan Bonilla Diaz</h1>
+							<h1 class="text-up text-fs125"><span class="label-fsnone game">Game</span> & <span class="label-fsnone audio">Sound</span> Designer</h1>
 							<!-- Sub-header Text -->
-							<h4 class="pad-b5" style="font-size: 105%;">Also known as lunzyde!</h4>
+							<h2 class="text-fs100">Also known as lunzyde!</h2>
 								
 							<!-- 2nd Sub-header Random Text -->
-							<p style="font-size: 85%;">Fun Fact: <script type='text/javascript'>
+							<p class="text-fs85">Fun Fact: <script type='text/javascript'>
 								function RandTxt(){ var txt=new Array()
 								
 									txt[0]="Refresh this page for another fun fact! 🤩"
@@ -83,6 +80,9 @@
 									txt[2]="I used to make mods for AudioSurf 2. 👾"
 									txt[3]="Daft Punk ignited my interest in audio. 🤖"
 									txt[4]="My first game engine was RPG Maker. 🏰"
+									txt[5]="I'm learning Portuguese with Duolingo! 🦉"
+									txt[6]="I started using FL Studio in 2013. 🥕"
+									txt[7]="I'm new to REAPER, so far I like it! 🎛️"
 									
 									var rand=Math.floor(Math.random()*txt.length)
 									document.write(txt[rand]) }
@@ -96,75 +96,86 @@
 			</section>
 
 			<!-- Featured Projects -->
-			<section id="featuredprojects" class="wrapper style2">				
-				<div class="container pad-t15 pad-b25">
+			<section class="wrapper style2">				
+				<div class="container pad-t25 pad-b25">
 					
-					<h3 class="text-upcent pad-t10 pad-b10 text-lspace5 text-lheight125" style="font-size: 150%;">Featured Projects</h3>
-					<hr class="thick50 pad-t25">
+					<h3 class="text-upcent text-lspace5 text-lheight125 text-fs150">Featured Projects</h3>
+					<hr class="thick50 marg-t20 marg-b10">
 
 					<!-- PixelTwips -->
-					<div class="row aln-center pad-t10 pad-b25">
+					<div class="row aln-center pad-t25 pad-b25">
 						<!-- Media -->	
-						<div class="col-6 col-9-medium col-11-small pad-b10">
-							<video autoplay loop muted id="pauseoutbounds" class="workpreview">
+						<div class="col-6 col-9-medium col-12-small pad-b15">
+							<video autoplay loop muted disableRemotePlayback id="pauseoutbounds" class="asr-169 workpreview">
 								<source src="media/videos/PixelTwips_WorkPreview.webm" type="video/webm">
 								<source src="media/videos/PixelTwips_WorkPreview.webm" type="video/mp4">
 							</video>
 						</div>
 						<!-- Info -->	
-						<div class="col-6 col-12-medium">	
-							<section class="highlight; feature-list">
-								
-								<h3 style="font-size: 175%;">PixelTwips</h3>
-								<h4>Completely developed by myself!</h4>
-								<p style="font-size: 90%;"><strong><i>Release Date: August 2021</i></strong></p>
+						<div class="col-6 col-9-medium col-12-small">	
+							<section>
+		
+								<h4 class="text-fs175 text-cfeat">PixelTwips</h4>
+								<h5 class="text-fs100 text-lheight150">Completely developed by myself!
+								<br>Release Date: August 2021</h5>
 
-								<p style="font-size: 90%;"><b>Roles:</b> <span class="label code">Visual Scripting</span> <span class="label game">Game Design</span>
+								<div class="text-fs90"><ul class="labeltag"><li><b>Roles:&ensp;</b></li><li><div>
+									<span class="label code">Visual Scripting</span> <span class="label game">Game Design</span>
 									<span class="label audio">Music Production</span> <span class="label audio">Sound Design</span> 
-									<span class="label art">Pixel Art</span> <span class="label art">UI</span></p>
+									<span class="label art">Pixel Art</span> <span class="label art">UI</span>
+								</div></li></ul></div>
 
-								<p style="font-size: 90%;"><b>Tools:</b> <span class="label game">Construct 3</span> <span class="label audio">FL Studio</span>
-									<span class="label art">Photoshop Elements</span> <span class="label art">Aseprite</span></p>
+								<div class="text-fs90"><ul class="labeltag"><li><b>Tools:&ensp;</b></li><li><div>
+									<span class="label game">Construct 3</span> <span class="label audio">FL Studio</span>
+									<span class="label art">Photoshop Elements</span> <span class="label art">Aseprite</span>
+								</div></li></ul></div>
 
-								<ul style="font-size: 85%;">
+								<ul class="text-fs85">
 									<li>Project managing and generating content for this hyper-casual endless runner.</li>
 									<li>Developed a customization system based on six different categories that modify the gameplay rules and mechanics 
 									- alongside visual and music elements, blending well with the pacing which evolves through the accumulated distance.</li>
 									<li>Created audio and art assets for the retro arcade aesthetic with a modern twist.</li>
 								</ul>
 
-								<ul class="actions" style="margin-top: 2.5%;">
-									<!-- <li><a href="work/pixeltwips.html" class="button style1">Learn More</a></li> -->
-									<li><a href="https://lunzyde.itch.io/pixeltwips" class="button style1">
+								<ul class="actions">
+									<!-- <li><a href="work/pixeltwips.html" class="button style1 marg-t10">Learn More</a></li> - Need to finish this page -->
+									<!-- <li><a href="https://itch.io/embed-upload/6737906?color=0f0f0f" class="button style1 marg-t10">
+										<i class="fas fa-play fa-lg"></i> Play</a></li> - Itch's embed link is currently not working well with different sizes -->
+									<li><a href="https://lunzyde.itch.io/pixeltwips" class="button style1 marg-t10">
 									<i class="fab fa-itch-io fa-lg"></i> Itch.io</a></li></ul>
 								
 							</section>
 						</div>	
 					</div>
 
-					<hr>
+					<hr class="marg-t10 marg-b10">
 
 					<!-- Bird Watch -->
 					<div class="row aln-center pad-t25 pad-b25">
 						<!-- Media -->	
-						<div class="col-6 col-9-medium col-11-small pad-b10">
-							<iframe src="https://www.youtube.com/embed/4Osn4gSq3FA?rel=0" title="Bird Watch: Central Park Trailer" frameborder="0"
+						<div class="col-6 col-9-medium col-12-small pad-b15">
+							<iframe class="asr-169" src="https://www.youtube.com/embed/4Osn4gSq3FA?rel=0" title="Bird Watch: Central Park Trailer" frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 						</div>
 						<!-- Info -->	
-						<div class="col-6 col-12-medium">
-							<section class="highlight; feature-list">
+						<div class="col-6 col-9-medium col-12-small">
+							<section>
 								
-								<h3 style="font-size: 175%;">Bird Watch: Central Park</h3>
-								<h4>by CelleC Games</h4>
-								<p style="font-size: 90%;"><strong><i>Release Date: TBD</i></strong></p>
+								<h4 class="text-fs175 text-cfeat">Bird Watch: Central Park</h4>
+								<h5 class="text-fs100 text-lheight150">by CelleC Games
+								<br>Release Date: TBD</h5>
 
-								<p style="font-size: 90%;"><b>Roles:</b> <span class="label code">Blueprints</span> <span class="label audio">Sound Design</span> 
-									<span class="label audio">Music Production</span></p> 
-								<p style="font-size: 90%;"><b>Tools:</b> <span class="label game">Unreal Engine 5</span> <span class="label audio">FL Studio</span> 
-									<span class="label audio">iZotope RX Elements</span> <span class="label audio">Krotos Studio</span></p>
+								<div class="text-fs90"><ul class="labeltag"><li><b>Roles:&ensp;</b></li><li><div>
+									<span class="label code">Blueprints</span> <span class="label audio">Sound Design</span> 
+									<span class="label audio">Music Production</span>
+								</div></li></ul></div>
 
-								<ul style="font-size: 85%;">
+								<div class="text-fs90"><ul class="labeltag"><li><b>Tools:&ensp;</b></li><li><div>
+									<span class="label game">Unreal Engine 5</span> <span class="label audio">FL Studio</span> 
+									<span class="label audio">iZotope RX Elements</span> <span class="label audio">Krotos Studio</span>
+								</div></li></ul></div>
+
+								<ul class="text-fs85">
 									<li>Implemented audio assets with sound cues, attenuations, and blueprint systems.</li>
 									<li>Sourced authentic recordings of bird sounds from the
 										<a href="https://www.macaulaylibrary.org/product/the-cornell-guide-to-bird-sounds-us-and-canada/">Macaulay Library by Cornell Lab of Ornitology</a>, 
@@ -173,11 +184,11 @@
 									<li>Composed and produced the music for the original soundtrack.</li>
 								</ul>
 
-								<ul class="actions" style="margin-top: 2.5%;">
-									<!-- <li><a href="work/birdwatch.html" class="button style1">Learn More</a></li> -->
-									<li><a href="https://store.steampowered.com/app/2327740/Bird_Watch_Central_Park/" class="button style1">
+								<ul class="actions">
+									<!-- <li><a href="work/birdwatch.html" class="button style1 marg-t10">Learn More</a></li> - Need to finish this page or cut it -->
+									<li><a href="https://store.steampowered.com/app/2327740/Bird_Watch_Central_Park/" class="button style1 marg-t10">
 										<i class="fab fa-steam fa-lg"></i> Steam</a></li>
-									<li><a href="https://soundcloud.com/lunzyde/sets/bird-watch-central-park-original-soundtrack/s-3Yny40kTZpZ" class="button style1">
+									<li><a href="https://soundcloud.com/lunzyde/sets/bird-watch-central-park-original-soundtrack/s-3Yny40kTZpZ" class="button style1 marg-t10">
 										<i class="fab fa-soundcloud fa-lg"></i> Soundtrack</a></li></ul>
 
 								
@@ -185,73 +196,82 @@
 						</div>	
 					</div>
 
-					<hr>
+					<hr class="marg-t10 marg-b10">
 
 					<!-- Mini-Tank -->
 					<div class="row aln-center pad-t25 pad-b25">
 						<!-- Media -->	
-						<div class="col-6 col-9-medium col-11-small pad-b10">
-							<video autoplay loop muted id="pauseoutbounds" class="workpreview">
+						<div class="col-6 col-9-medium col-12-small pad-b15">
+							<video autoplay loop muted disableRemotePlayback id="pauseoutbounds" class="asr-169 workpreview">
 								<source src="media/videos/MTA_WorkPreview.webm" type="video/webm">
 								<source src="media/videos/MTA_WorkPreview.mp4" type="video/mp4">
 							</video>
 						</div>
 						<!-- Info -->	
-						<div class="col-6 col-12-medium">	
-							<section class="highlight; feature-list">
+						<div class="col-6 col-9-medium col-12-small">	
+							<section>
 								
-								<h3 style="font-size: 175%;">Mini-Tank Arena</h3>
-								<h4>In collaboration with Zygobot</h4>
-								<p style="font-size: 90%;"><strong><i>Release Date: TBD</i></strong></p>
+								<h4 class="text-fs175 text-cfeat">Mini-Tank Arena</h4>
+								<h5 class="text-fs100 text-lheight150">In collaboration with Zygobot
+								<br>Release Date: TBD</h5>
 
-								<p style="font-size: 90%;"><b>Roles:</b> <span class="label code">Blueprints</span> <span class="label audio">Sound Design</span> 
-									<span class="label art">UI</span> <span class="label misc">QA</span></p> 
-								<p style="font-size: 90%;"><b>Tools:</b> <span class="label game">Unreal Engine 5</span> <span class="label audio">REAPER</span> 
-									<span class="label art">Adobe XD</span></p>
+								<div class="text-fs90"><ul class="labeltag"><li><b>Roles:&ensp;</b></li><li><div>
+									<span class="label code">Blueprints</span> <span class="label audio">Sound Design</span> 
+									<span class="label misc">QA</span> <span class="label art">UI</span>
+								</div></li></ul></div>
 
-								<ul style="font-size: 85%;">
+								<div class="text-fs90"><ul class="labeltag"><li><b>Tools:&ensp;</b></li><li><div>
+									<span class="label game">Unreal Engine 5</span> <span class="label audio">REAPER</span> 
+									<span class="label art">Adobe XD</span>
+								</div></li></ul></div>
+
+								<ul class="text-fs85">
 									<li>Creating unique sound effects for the toy-like appearance of each tank.</li>
 									<li>Implementing audio assets while verifying the replication of the gameplay sounds.</li>
 									<li>Providing help with UI prototypes and testing gameplay in multiplayer sessions.</li>
 								</ul>
 
-								<ul class="actions" style="margin-top: 2.5%;">
-									<li><a class="button style2"><i class="fab fa-steam fa-lg"></i> Coming Soon</a></li></ul>
+								<ul class="actions">
+									<li><a class="button style2 marg-t10"><i class="fab fa-steam fa-lg"></i> Coming Soon</a></li></ul>
 								
 							</section>
 						</div>	
 					</div>
 
-					<hr>
+					<hr class="marg-t10 marg-b10">
 
 					<!-- Behbes Adventure! -->
 					<div class="row aln-center pad-t25 pad-b25">
 						<!-- Media -->	
-						<div class="col-6 col-9-medium col-11-small pad-b10">
-							<iframe src="https://www.youtube.com/embed/udUg67uUlKc?rel=0" title="Behbes Adventure! (Tech Demo) - Sound Design Reel" frameborder="0" 
+						<div class="col-6 col-9-medium col-12-small pad-b15">
+							<iframe class="asr-169" src="https://www.youtube.com/embed/udUg67uUlKc?rel=0" title="Behbes Adventure! (Tech Demo) - Sound Design Reel" frameborder="0" 
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 						</div>
 						<!-- Info -->	
-						<div class="col-6 col-12-medium">	
-							<section class="highlight; feature-list">
+						<div class="col-6 col-9-medium col-12-small">	
+							<section>
 								
-								<h3 style="font-size: 175%;">Behbes Adventure! (Tech Demo)</h3>
-								<h4>by Amas Behbes & Batú Games</h4>
-								<p style="font-size: 90%;"><strong><i>Demo Release Date: August 2022</i></strong></p>
+								<h4 class="text-fs175 text-cfeat">Behbes Adventure! (Tech Demo)</h4>
+								<h5 class="text-fs100 text-lheight150">by Amas Behbes & Batú Games
+								<br>Demo Release Date: August 2022</h5>
 
-								<p style="font-size: 90%;"><b>Roles:</b> <span class="label audio">Sound Design</span> 
-									<span class="label audio">Music Production</span></p> 
-								<p style="font-size: 90%;"><b>Tools:</b> <span class="label audio">FL Studio</span></p>
+								<div class="text-fs90"><ul class="labeltag"><li><b>Roles:&ensp;</b></li><li><div>
+									<span class="label audio">Sound Design</span> <span class="label audio">Music Production</span>
+								</div></li></ul></div>
 
-								<ul style="font-size: 85%;">
+								<div class="text-fs90"><ul class="labeltag"><li><b>Tools:&ensp;</b></li><li><div>
+									<span class="label audio">FL Studio</span>
+								</div></li></ul></div>
+								
+								<ul class="text-fs85">
 									<li>Collaborated with the dev team to determine and achieve the audio focus.</li>
 									<li>Created silly and whimsical sound effects for gameplay elements such as: 
 									collecting items, finishing quests, interacting with characters, and more.</li>
 									<li>Composed the music for the credits scene on the end of the demo.</li>
 								</ul>
 
-								<ul class="actions" style="margin-top: 2.5%;">
-								<li><a href="https://amasbehbes.itch.io/behbes-adventures" class="button style1">
+								<ul class="actions">
+								<li><a href="https://amasbehbes.itch.io/behbes-adventures" class="button style1 marg-t10">
 									<i class="fab fa-itch-io fa-lg"></i> Itch.io</a></li></ul>
 								
 							</section>
@@ -266,7 +286,7 @@
 				<div class="container pad-t15 pad-b15">
 					
 					<!-- Social icons goes here -->
-					<div id="copyright" style="margin-bottom: 0.75em; font-size: 150%;"><ul><li>
+					<div id="copyright" class="socials"><ul><li>
 						<a href="https://twitter.com/lunzyde"><i class="fab fa-twitter" title="Twitter"></i></a>&ensp;
 						<a href="https://www.linkedin.com/in/bryanbonilladiaz/"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a>&ensp;
 						<a href="mailto:bryanbonilladiaz@gmail.com"><i class="fa fa-envelope" title="Email"></i></a>&ensp;

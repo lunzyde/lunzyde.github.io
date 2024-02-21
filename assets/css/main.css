@@ -3023,7 +3023,7 @@ input, select, textarea {
   margin: auto;
 }
 
-/* Make the images invisible by default */
+/* Make the media inside invisible by default */
 .Containers, .Containers2, .Containers3, .Containers4,
 .Containers5, .Containers6, .Containers7, .Containers8,
 .Containers9, .Containers10 { display: none; }
@@ -3059,7 +3059,6 @@ input, select, textarea {
 /* Caption Info */
 .Info, .Info_PosR, .Info_Cent {
 	color: #ffffff;
-	font-size: 18px;
 	padding-top: 2.5px;
 	padding-bottom: 2.5px;
 	padding-left: 15px;
@@ -3071,13 +3070,25 @@ input, select, textarea {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.Info_PosR { right: 0% }
+.Info_PosR { right: 0%; }
 .Info_Cent { width: 100%; }
+
+/* For when media is iframes - avoid using youtube, soundcloud, or similar embeds - future use?
+.Info_Out {
+	color: #ffffff;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: static;
+	width: auto;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.75);
+} */
 
 /* Worknumbering (1/3 etc) */
 .MessageInfo, .MessageInfo_PosR {
 	color: #ffffff;
-	font-size: 16px;
 	padding-top: 2.5px;
 	padding-bottom: 2.5px;
 	padding-left: 10px;
@@ -3120,6 +3131,20 @@ input, select, textarea {
 #dark .dots4:hover, #dark .dots5:hover, #dark .dots6:hover, #dark .dots7:hover,
 #dark .dots8:hover, #dark .dots9:hover, #dark .dots10:hover { background-color: #eeeeee; }
 
+/* For when using the arrows with the dots - related to iframe stuff - future use?
+.dots-arrows { cursor: pointer; display: inline-block; transition: color 0.5s ease; margin: 0 10px; }
+#light .dots-arrows { color: #afafaf; } #light .dots-arrows:hover { color: #505050; }
+#dark .dots-arrows { color: #707070; } #dark .dots-arrows:hover { color: #eeeeee; } */
+
+/*  Example of use case with dots:
+
+	Left Arrow for html
+	<span class="dots-arrows text-fs100" onclick="plusSlides(-1,0)">
+	<i class="fas fa-chevron-left fa-lg" aria-hidden="true" title="Go to the previous slide!"></i></span> 
+	
+	Right Arrow for html
+	<span class="dots-arrows text-fs100" onclick="plusSlides(1,0)">
+	<i class="fas fa-chevron-right fa-lg" aria-hidden="true" title="Go to the next slide!"></i></span> */
 
 /* Faint animation */
 .fade {
@@ -3145,8 +3170,7 @@ input, select, textarea {
 }
 
 /* These are the colored tags describing roles and tools */
-.label
-{
+.label {
   border-radius: 5px;
   color: #fff; 
   font-size: 75%;
@@ -3160,32 +3184,37 @@ input, select, textarea {
   margin-right: 0.25em;
 }
 
-.game
-{
-  background-color: #aa2a75;
+.label-fsnone { /* For specific case scenarios like the intro in the home page */
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  line-height: normal;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
+  margin-bottom: 0em;
+  margin-right: 0em;
 }
 
-.audio
-{
-  background-color: #2aa5aa;
-}
+/* Each category has its own unique color */
+.game { background-color: #aa2a75; }
+.audio { background-color: #2aa5aa; }
+.code { background-color: #bb9900; }
+.art { background-color: #2aaa5f; }
+.misc { background-color: #8525bf; }
 
-.code
-{
-  background-color: #bb9900;
-}
+/* Keeps the labels uniformed while keeping the labels inline */
+ul.labeltag { display: flex; list-style: none; }
+ul.labeltag, ul.labeltag > li { padding-left: 0; }
+ul.labeltag > li > div { display: inline-block; }
 
-.art
-{
-  background-color: #2aaa5f;
-}
+/* Social Media icons in Footer */
+#copyright.socials { margin-bottom: 0.75em; font-size: 150%; }
 
-.misc
-{
-  background-color: #8525bf;
-}
-
-/* Back to Top Stuff */
+/* Back to Top button */
 .top
 {
   --offset: 175px; 
@@ -3210,6 +3239,7 @@ input, select, textarea {
   font-size: 125%;
 }
 
+/* Back to Top button for mobile devices */
 @media (max-width: 980px) { 
 	.top { 
 		bottom: 6px;
@@ -3223,40 +3253,72 @@ input, select, textarea {
 	}
 }
 
-/* For YouTube, iframe videos, or videos to keep their aspect ratio */
-iframe, video.workpreview { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+/* For media to keep their aspect ratio */
+iframe.asr-1610, video.asr-1610, img.asr-1610 { width: 100%; height: auto; aspect-ratio: 16 / 10; }
+iframe.asr-169, video.asr-169, img.asr-169 { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+iframe.asr-43, video.asr-43, img.asr-43 { width: 100%; height: auto; aspect-ratio: 4 / 3; }
+iframe.asr-32, video.asr-32, img.asr-32 { width: 100%; height: auto; aspect-ratio: 3 / 2; }
+/* iframe.asr-11, video.asr-11, img.asr-11 { width: 100%; height: auto; aspect-ratio: 1 / 1; } - just in case for future */
+
+/* No right clicking for media controls */
+video.workpreview, video.banner { pointer-events: none; } /* Still debating if I add img classes, but that will be for another time I guess */
 
 /* Text formatting Classes */
 .text-upcent { text-transform: uppercase; text-align: center; }
-.text-up { text-transform: uppercase; }
-.text-cent { text-align: center; }
+.text-up { text-transform: uppercase; } .text-cent { text-align: center; }
 
-.text-lspace2half { letter-spacing: 2.5px; }
-.text-lspace5 { letter-spacing: 5px; }
-.text-lspace10 { letter-spacing: 10px; }
-.text-lspace15 { letter-spacing: 15px; }
-.text-lspace20 { letter-spacing: 20px; }
-.text-lspace25 { letter-spacing: 25px; }
+.text-lspace2half { letter-spacing: 2.5px; } .text-lspace5 { letter-spacing: 5px; }
+.text-lspace10 { letter-spacing: 10px; } .text-lspace15 { letter-spacing: 15px; }
+.text-lspace20 { letter-spacing: 20px; } .text-lspace25 { letter-spacing: 25px; }
 
-.text-lheight125 { line-height: 1.25; }
-.text-lheight150 { line-height: 1.50; }
-.text-lheight175 { line-height: 1.75; }
-.text-lheight200 { line-height: 2.00; }
+.text-lheight125 { line-height: 1.25; } .text-lheight150 { line-height: 1.50; }
+.text-lheight175 { line-height: 1.75; } .text-lheight200 { line-height: 2.00; }
 
 a.cgrey, abbr.cgrey, u.cgrey { text-decoration-color: #b7b7b7 } /* To change hyperlink, abbreviation, or underline lines on white backgrounds in specific occasions */
 span.vertbar { color: #dddddd50; font-weight: bold;} /* For specific vertical bars that separate certain content */
 
-/* Padding pixel adjustment Classes */
-.pad-b5 { padding-bottom: 5px; }
-.pad-b10 { padding-bottom: 10px; }
-.pad-b15 { padding-bottom: 15px; }
-.pad-b20 { padding-bottom: 20px; }
-.pad-b25 { padding-bottom: 25px; }
-.pad-b50 { padding-bottom: 50px; }
+/* Padding and Margin pixel adjustment Classes */
+.pad-b5 { padding-bottom: 5px; } .pad-t5 { padding-top: 5px; }
+.pad-b10 { padding-bottom: 10px; } .pad-t10 { padding-top: 10px; }
+.pad-b15 { padding-bottom: 15px; } .pad-t15 { padding-top: 15px; }
+.pad-b20 { padding-bottom: 20px; } .pad-t20 { padding-top: 20px; }
+.pad-b25 { padding-bottom: 25px; } .pad-t25 { padding-top: 25px; }
+.pad-b50 { padding-bottom: 50px; } .pad-t50 { padding-top: 50px; }
+/* Don't use these Margin classes for text - unless needed */
+.marg-b5 { margin-bottom: 5px; } .marg-t5 { margin-top: 5px; }
+.marg-b10 { margin-bottom: 10px; } .marg-t10 { margin-top: 10px; }
+.marg-b15 { margin-bottom: 15px; } .marg-t15 { margin-top: 15px; }
+.marg-b20 { margin-bottom: 20px; } .marg-t20 { margin-top: 20px; }
+.marg-b25 { margin-bottom: 25px; } .marg-t25 { margin-top: 25px; }
+.marg-b50 { margin-bottom: 50px; } .marg-t50 { margin-top: 50px; }
 
-.pad-t5 { padding-top: 5px; }
-.pad-t10 { padding-top: 10px; }
-.pad-t15 { padding-top: 15px; }
-.pad-t20 { padding-top: 20px; }
-.pad-t25 { padding-top: 25px; }
-.pad-t50 { padding-top: 50px; }
+/* Font size classes with margin adjustments - takes into consideration different screen sizes */
+@media (min-width: 981px) { 
+  .text-fs175 { font-size: 1.75em; margin-bottom: 2px; }
+  .text-fs150 { font-size: 1.5em; margin-bottom: 2px; }
+  .text-fs125 { font-size: 1.25em; margin-bottom: 2px; }
+  .text-fs100 { font-size: 1em; margin-bottom: 2px; }
+  .text-fs90 { font-size: 0.9em; margin-bottom: 1px; }
+  .text-fs85 { font-size: 0.85em; margin-bottom: 1px; }
+  .text-fs75 { font-size: 0.75em; margin-bottom: 1px; }
+}
+/* 980px to 737px will increase the font by 0.05em */
+@media (max-width: 980px) and (min-width: 737px) { 
+  .text-fs175 { font-size: 1.8em; margin-bottom: 3.5px; }
+  .text-fs150 { font-size: 1.55em; margin-bottom: 3.5px; }
+  .text-fs125 { font-size: 1.3em; margin-bottom: 3.5px; }
+  .text-fs100 { font-size: 1.05em; margin-bottom: 3.5px; }
+  .text-fs90 { font-size: 0.95em; margin-bottom: 2.5px; }
+  .text-fs85 { font-size: 0.9em; margin-bottom: 2.5px; }
+  .text-fs75 { font-size: 0.8em; margin-bottom: 2.5px; }
+}
+/* 736px and below will increase the font by 0.15em */
+@media (max-width: 736px) {
+  .text-fs175 { font-size: 1.9em; margin-bottom: 5px; }
+  .text-fs150 { font-size: 1.65em; margin-bottom: 5px; }
+  .text-fs125 { font-size: 1.4em; margin-bottom: 5px; }
+  .text-fs100 { font-size: 1.15em; margin-bottom: 5px; }
+  .text-fs90 { font-size: 1.05em; margin-bottom: 4px; }
+  .text-fs85 { font-size: 1em; margin-bottom: 4px; }
+  .text-fs75 { font-size: 0.9em; margin-bottom: 4px; }
+}

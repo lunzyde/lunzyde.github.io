@@ -86,7 +86,7 @@ SlideShow(1, 5); SlideShow(1, 6); SlideShow(1, 7); SlideShow(1, 8); SlideShow(1,
 // forward/Back controls
 function plusSlides(n, no) { SlideShow(slidePosition[no] += n, no); }
 
-// images controls
+// Slideshow controls
 function currentSlide(n, no) { SlideShow(slidePosition[no] = n, no); }
 
 // Do not modify unless needed, this already handles multiple slideshows.
@@ -106,7 +106,7 @@ function SlideShow(n, no) {
   circles[slidePosition[no]-1].className += " enable";
 }
 
-// Video pausing fuctionality
+// Video pausing fuctionality - does not apply to iframes
 function playPauseVideo() {
     let videos = document.querySelectorAll("pauseoutbounds");
     videos.forEach((video) => {

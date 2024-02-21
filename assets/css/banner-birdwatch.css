@@ -6,7 +6,7 @@
 */
 
 	/* Image banner setup */	
-	#header { background: url("../../media/images/banner_birdwatch.png") center center; }
+	#header { background: url("../../media/images/banner_birdwatch.png") center center; background-repeat: no-repeat; background-size: cover; }
 
 	/* Video banner setup */
 	video.banner { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; min-width: auto; height: auto; min-height: auto; background-size: cover; }

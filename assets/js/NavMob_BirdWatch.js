@@ -16,11 +16,11 @@
 					// Do not delete the comment below, it auto generates the nav buttons to mobile. Relevant when testing and doing a custom navPanel.
 					// $('#nav').navList() +
 					'<a class="link depth-0" href="/"><span class="indent-0"></span><i class="fas fa-home" aria-hidden="true"></i> Home</a>' +
-					'<a class="link depth-0" href="/work.html"><span class="indent-0"></span><i class="fas fa-briefcase" aria-hidden="true"></i> Work</a>' +
-						'<a class="link depth-1"><span class="indent-1"></span><i class="fas fa-gamepad" aria-hidden="true"></i> Bird Watch</a><hr class="nav">' +
-							'<a class="link depth-0"><span class="indent-2"></span>Blueprint Systems</a>' +
-                        	'<a class="link depth-0"><span class="indent-2"></span>Sound Design Proc-</a>' +
-							'<a class="link depth-0"><span class="indent-2"></span>Addtional Info</a><hr class="nav">' +
+					'<a class="link depth-0" href="games.html"><span class="indent-0"></span><i class="fas fa-gamepad" aria-hidden="true"></i> Games</a>' +
+						'<a class="link depth-1"><span class="indent-1"></span>Bird Watch</a><hr class="nav">' +
+					'<a class="link depth-0" href="prototypes.html"><span class="indent-0"></span><i class="fas fa-tools" aria-hidden="true"></i> Prototypes</a>' +
+					'<a class="link depth-0" href="audio.html"><span class="indent-0"></span><i class="fas fa-headphones" aria-hidden="true"></i> Audio</a>' +
+					'<a class="link depth-0" href="misc.html"><span class="indent-0"></span><i class="fas fa-briefcase" aria-hidden="true"></i> Work</a>' +
 					'<a class="link depth-0" href="/cv.html"><span class="indent-0"></span><i class="fas fa-book" aria-hidden="true"></i> CV</a>' +
 					'<a class="link depth-0" href="/about.html"><span class="indent-0"></span><i class="fas fa-user" aria-hidden="true"></i> About</a>' +
 				'</nav>' + '</div>'

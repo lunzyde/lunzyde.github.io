@@ -12,10 +12,11 @@
 	video.banner { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; min-width: auto; height: auto; min-height: auto; background-size: cover; }
 
 	/* Banner properties */
-	#header:before { background: rgba(0, 0, 0, 0.50); z-index: 0; } #nav { z-index: 0; } #nav ul { background: rgba(0,0,0,0.8); } #logo { z-index: 0; }
+	#header:before { background: rgba(0, 0, 0, 0.5); } #header:before, #nav, #logo { z-index: 0; }
+	#nav ul { background: rgba(0,0,0,0.8); }
 
 	/* Banner properties when the Video Banner should be displayed */
-	@media screen and (max-width: 2579px) and (min-width: 981px) { #header:before { z-index: 1; } #nav { z-index: 1; } #logo { z-index: 1; } }
+	@media screen and (max-width: 2579px) and (min-width: 981px) { #header:before, #nav, #logo { z-index: 1; } }
 	
 	/* Logo scaling up to 4k */
 	@media screen and (min-width: 1681px) { #logo { padding-bottom: 1.75em; } }

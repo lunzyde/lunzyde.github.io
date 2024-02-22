@@ -3073,7 +3073,7 @@ input, select, textarea {
 .Info_PosR { right: 0%; }
 .Info_Cent { width: 100%; }
 
-/* For when media is iframes - avoid using youtube, soundcloud, or similar embeds - future use?
+/* For when media is iframes - avoid using youtube, soundcloud, or similar embeds, just stick to scalable and no audio media/iframes - future use? 
 .Info_Out {
 	color: #ffffff;
 	padding-top: 2.5px;
@@ -3131,7 +3131,7 @@ input, select, textarea {
 #dark .dots4:hover, #dark .dots5:hover, #dark .dots6:hover, #dark .dots7:hover,
 #dark .dots8:hover, #dark .dots9:hover, #dark .dots10:hover { background-color: #eeeeee; }
 
-/* For when using the arrows with the dots - related to iframe stuff - future use?
+/* For when using the arrows with the dots - kind of related to iframe stuff - future use?
 .dots-arrows { cursor: pointer; display: inline-block; transition: color 0.5s ease; margin: 0 10px; }
 #light .dots-arrows { color: #afafaf; } #light .dots-arrows:hover { color: #505050; }
 #dark .dots-arrows { color: #707070; } #dark .dots-arrows:hover { color: #eeeeee; } */
@@ -3322,3 +3322,12 @@ span.vertbar { color: #dddddd50; font-weight: bold;} /* For specific vertical ba
   .text-fs85 { font-size: 1em; margin-bottom: 4px; }
   .text-fs75 { font-size: 0.9em; margin-bottom: 4px; }
 }
+
+/* Specific Niches */
+/* Home Page - Intro Stuff */
+.intro-txt { text-align: left; } .intro-img { height: auto; aspect-ratio: 1 / 1; }
+.intro-txt, .intro-img { align-self: center; }
+@media (min-width: 981px) { .intro-img { width: 12.5%; padding-top: 12.5px; } }
+@media (max-width: 980px) and (min-width: 737px) { .intro-img { width: 17.5%; padding-top: 12.5px; } }
+@media (max-width: 736px) and (min-width: 451px) { .intro-img { width: 20%; padding: 5px 5px; } }
+@media (max-width: 450px) { .intro-img { width: 25%; padding: 5px 5px; } .intro-txt { text-align: center; } }

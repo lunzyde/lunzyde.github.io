@@ -22,6 +22,11 @@
 	@media screen and (min-width: 1681px) { #logo { padding-bottom: 1.75em; } }
 	@media screen and (max-width: 1680px) and (min-width: 1281px) { #logo {  width: 30em; padding-bottom: 1.5em; } }
 	@media screen and (max-width: 1280px) and (min-width: 981px) { #logo { width: 30em; padding-bottom: 1.25em; } }
+	@media screen and (max-width: 980px) { #logo { width: 45%; } }
+	@media screen and (max-width: 736px) { #logo { width: 50%; } }
+	@media screen and (max-width: 666px) { #logo { width: 55%; } }
+	@media screen and (max-width: 580px) { #logo { width: 65%; } }
+	@media screen and (max-width: 440px) { #logo { width: 85%; } }
 
 	/* Video banner fill scaling up to 4k */
 	@media screen and (max-width: 2580px) and (min-width: 2380px) { video.banner { top: -195%; } }
@@ -42,20 +47,29 @@
 		/* Headers */
 		.feature-list h3 { color: #ff6565 !important; }
 		#highlights .highlight h3 { color: #ff6565; }
-		.text-cfeat { color: #ff6565; }
+		.text-cfeat { color: #ff6565 !important; }
 		
 		/* Buttons */
 		.button { background: #444; }
-		.button:hover { background-color: #ff6565; }
+		input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, .button:hover { background-color: #ff6565; }
 		
-		.button.style1 { background: #dd5050 url("images/overlay.png"); color: #fff; }
-			.button.style1:hover { background-color: #ff7070;}
-			.button.style1:active { background-color: #bb5555; }
+		input[type="button"].style1, input[type="submit"].style1, input[type="reset"].style1,
+		button.style1, .button.style1 { background: #dd5050 url("images/overlay.png"); color: #fff; }
+			input[type="button"].style1:hover, input[type="submit"].style1:hover, input[type="reset"].style1:hover,
+			button.style1:hover, .button.style1:hover { background-color: #ff7070;}
+			input[type="button"].style1:active, input[type="submit"].style1:active, input[type="reset"].style1:active,
+			button.style1:active, .button.style1:active { background-color: #bb5555; }
 
-		.button.style2 { background: none; color: #676060; box-shadow: inset 0px 0px 2px 0px #a7a0a0; }
-			.button.style2:hover { box-shadow: inset 0px 0px 2px 0px #676060; }
-			.button.style2:active { box-shadow: inset 0px 0px 2px 0px #272020; }
+		input[type="button"].style2, input[type="submit"].style2, input[type="reset"].style2,
+		button.style2, .button.style2 { background: none; color: #676767; box-shadow: inset 0px 0px 2px 0px #a7a0a0; }
+			input[type="button"].style2:hover, input[type="submit"].style2:hover, input[type="reset"].style2:hover,
+			button.style2:hover, .button.style2:hover { box-shadow: inset 0px 0px 2px 0px #676060; }
+			input[type="button"].style2:active, input[type="submit"].style2:active, input[type="reset"].style2:active,
+			button.style2:active, .button.style2:active { box-shadow: inset 0px 0px 2px 0px #272020; }
 
-		.button.style3 { background: #000000 url("images/overlay.png"); color: #fff; }
-			.button.style3:hover { background-color: #502525; }
-			.button.style3:active { background-color: #251010; }
+		input[type="button"].style3, input[type="submit"].style3, input[type="reset"].style3,
+		button.style3, .button.style3 { background: #000000 url("images/overlay.png"); color: #fff; }
+			input[type="button"].style3:hover, input[type="submit"].style3:hover, input[type="reset"].style3:hover,
+			button.style3:hover, .button.style3:hover { background-color: #502525; }
+			input[type="button"].style3:active, input[type="submit"].style3:active, input[type="reset"].style3:active,
+			button.style3:active, .button.style3:active { background-color: #251010; }

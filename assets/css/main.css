@@ -106,7 +106,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
-		color: #919499;
+		color: #919191;
 		font-size: 14pt;
 		line-height: 1.75em;
 		letter-spacing: 0.025em;
@@ -1677,11 +1677,11 @@ input, select, textarea {
 		line-height: 4em;
 	}
 
-		input[type="button"]:hover,
+		/* input[type="button"]:hover,
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		button:hover,
-		/* .button:hover {
+		 .button:hover {
 			background-color: #f98780;
 		} */
 
@@ -1694,79 +1694,79 @@ input, select, textarea {
 			min-width: 14em;
 		}
 
-		input[type="button"].style1,
+		/* input[type="button"].style1,
 		input[type="submit"].style1,
 		input[type="reset"].style1,
 		button.style1,
-		/* .button.style1 {
+		 .button.style1 {
 			background: #cf6761 url("images/overlay.png");
 			color: #fff;
 		} */
 
-			input[type="button"].style1:hover,
+			/* input[type="button"].style1:hover,
 			input[type="submit"].style1:hover,
 			input[type="reset"].style1:hover,
 			button.style1:hover,
-			/* .button.style1:hover {
+			 .button.style1:hover {
 				background-color: #f98780;
 			} */
 
-			input[type="button"].style1:active,
+			/* input[type="button"].style1:active,
 			input[type="submit"].style1:active,
 			input[type="reset"].style1:active,
 			button.style1:active,
-			/* .button.style1:active {
+			.button.style1:active {
 				background-color: #d96760;
 			} */
 
-		input[type="button"].style2,
+		/* input[type="button"].style2,
 		input[type="submit"].style2,
 		input[type="reset"].style2,
 		button.style2,
-		/* .button.style2 {
+		.button.style2 {
 			background: none;
 			color: #606167;
 			box-shadow: inset 0px 0px 2px 0px #a0a1a7;
 		} */
 
-			input[type="button"].style2:hover,
+			/* input[type="button"].style2:hover,
 			input[type="submit"].style2:hover,
 			input[type="reset"].style2:hover,
 			button.style2:hover,
-			/* .button.style2:hover {
+			 .button.style2:hover {
 				box-shadow: inset 0px 0px 2px 0px #606167;
 			} */
 
-			input[type="button"].style2:active,
+			/* input[type="button"].style2:active,
 			input[type="submit"].style2:active,
 			input[type="reset"].style2:active,
 			button.style2:active,
-			/* .button.style2:active {
+			 .button.style2:active {
 				box-shadow: inset 0px 0px 2px 0px #202127;
 			} */
 
-		input[type="button"].style3,
+		/* input[type="button"].style3,
 		input[type="submit"].style3,
 		input[type="reset"].style3,
 		button.style3,
-		/* .button.style3 {
+		 .button.style3 {
 			background: #000000 url("images/overlay.png");
 			color: #fff;
 		} */
 
-			input[type="button"].style3:hover,
+			/* input[type="button"].style3:hover,
 			input[type="submit"].style3:hover,
 			input[type="reset"].style3:hover,
 			button.style3:hover,
-			/* .button.style3:hover {
+			 .button.style3:hover {
 				background-color: #554141;
 			} */
 
-			input[type="button"].style3:active,
+			/* input[type="button"].style3:active,
 			input[type="submit"].style3:active,
 			input[type="reset"].style3:active,
 			button.style3:active,
-			/* .button.style3:active {
+			 .button.style3:active {
 				background-color: #1f232b;
 			} */
 
@@ -2030,7 +2030,6 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background: #222222 url("images/overlay.png");
-			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
@@ -2049,6 +2048,7 @@ input, select, textarea {
 
 		.wrapper.style2 {
 			background: #fff;
+			color: rgba(75, 75, 75, 0.75);
 		}
 
 			.wrapper.style2 .title {
@@ -2468,9 +2468,9 @@ input, select, textarea {
 
 		/* Logo */
 
-			#logo {
+			/* #logo {
 				margin-top: -0.5em !important;
-			}
+			}*/
 
 				#logo h1 {
 					font-size: 1.75em;
@@ -2795,6 +2795,12 @@ input, select, textarea {
 						margin-top: 0;
 						padding: 0;
 					}
+
+		/* Header */
+
+		.homepage #header {
+			height: 12.5em;
+		}
 		
 	}
 
@@ -2926,11 +2932,11 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				height: 17em;
+				height: 15em;
 			}
 
 				.homepage #header {
-					height: 12.5em;
+					height: 10em;
 				}
 
 		/* Logo */
@@ -2939,7 +2945,7 @@ input, select, textarea {
 				text-align: center;
 				padding-left: 2em;
 				padding-right: 2em;
-				width: 80%;
+				width: 75%;
 			}
 
 				#logo h1 {
@@ -3323,11 +3329,12 @@ span.vertbar { color: #dddddd50; font-weight: bold;} /* For specific vertical ba
   .text-fs75 { font-size: 0.9em; margin-bottom: 4px; }
 }
 
-/* Specific Niches */
+/* Specific Niches: Anything for one-use or misc stuff */
+
 /* Home Page - Intro Stuff */
 .intro-txt { text-align: left; } .intro-img { height: auto; aspect-ratio: 1 / 1; }
 .intro-txt, .intro-img { align-self: center; }
 @media (min-width: 981px) { .intro-img { width: 12.5%; padding-top: 12.5px; } }
 @media (max-width: 980px) and (min-width: 737px) { .intro-img { width: 17.5%; padding-top: 12.5px; } }
-@media (max-width: 736px) and (min-width: 451px) { .intro-img { width: 20%; padding: 5px 5px; } }
-@media (max-width: 450px) { .intro-img { width: 25%; padding: 5px 5px; } .intro-txt { text-align: center; } }
+@media (max-width: 736px) and (min-width: 441px) { .intro-img { width: 20%; padding: 5px 5px; } }
+@media (max-width: 440px) { .intro-img { width: 25%; padding: 5px 5px; } .intro-txt { text-align: center; } }

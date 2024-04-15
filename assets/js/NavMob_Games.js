@@ -16,7 +16,7 @@
 					// Do not delete the comment below, it auto generates the nav buttons to mobile. Relevant when testing and doing a custom navPanel.
 					// $('#nav').navList() +
 					'<a class="link depth-0" href="/"><span class="indent-0"></span><i class="fas fa-home" aria-hidden="true"></i> Home</a>' +
-					'<a class="link depth-1"><span class="indent-0"></span><i class="fas fa-gamepad" aria-hidden="true"></i> Games</a>' +
+					'<a class="link depth-1" href="#top"><span class="indent-0"></span><i class="fas fa-gamepad" aria-hidden="true"></i> Games</a>' +
 					'<a class="link depth-0" href="prototypes.html"><span class="indent-0"></span><i class="fas fa-tools" aria-hidden="true"></i> Prototypes</a>' +
 					'<a class="link depth-0" href="audio.html"><span class="indent-0"></span><i class="fas fa-headphones" aria-hidden="true"></i> Audio</a>' +
 					'<a class="link depth-0" href="misc.html"><span class="indent-0"></span><i class="fas fa-briefcase" aria-hidden="true"></i> Misc</a>' +

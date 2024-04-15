@@ -20,7 +20,7 @@
 					'<a class="link depth-0" href="prototypes.html"><span class="indent-0"></span><i class="fas fa-tools" aria-hidden="true"></i> Prototypes</a>' +
 					'<a class="link depth-0" href="audio.html"><span class="indent-0"></span><i class="fas fa-headphones" aria-hidden="true"></i> Audio</a>' +
 					'<a class="link depth-0" href="misc.html"><span class="indent-0"></span><i class="fas fa-briefcase" aria-hidden="true"></i> Misc</a>' +
-					'<a class="link depth-1"><span class="indent-0"></span><i class="fas fa-book" aria-hidden="true"></i> CV</a>' +
+					'<a class="link depth-1" href="#top"><span class="indent-0"></span><i class="fas fa-book" aria-hidden="true"></i> CV</a>' +
 						'<a class="link depth-0" href="#experience"><span class="indent-1"></span>Experience</a>' +
 						'<a class="link depth-0" href="#volunteering"><span class="indent-1"></span>Volunteering</a>' +
 						'<a class="link depth-0" href="#organizations"><span class="indent-1"></span>Organizations</a>' +

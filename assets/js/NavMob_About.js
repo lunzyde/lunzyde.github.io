@@ -21,7 +21,7 @@
 					'<a class="link depth-0" href="audio.html"><span class="indent-0"></span><i class="fas fa-headphones" aria-hidden="true"></i> Audio</a>' +
 					'<a class="link depth-0" href="misc.html"><span class="indent-0"></span><i class="fas fa-briefcase" aria-hidden="true"></i> Misc</a>' +
 					'<a class="link depth-0" href="cv.html"><span class="indent-0"></span><i class="fas fa-book" aria-hidden="true"></i> CV</a>' +
-					'<a class="link depth-1"><span class="indent-0"></span><i class="fas fa-user" aria-hidden="true"></i> About</a>' +
+					'<a class="link depth-1" href="#top"><span class="indent-0"></span><i class="fas fa-user" aria-hidden="true"></i> About</a>' +
 				'</nav>' + '</div>'
 			)
 				.appendTo($body)

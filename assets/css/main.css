@@ -3280,7 +3280,8 @@ video.workpreview, video.banner { pointer-events: none; } /* Still debating if I
 .text-lheight125 { line-height: 1.25; } .text-lheight150 { line-height: 1.50; }
 .text-lheight175 { line-height: 1.75; } .text-lheight200 { line-height: 2.00; }
 
-a.cgrey, abbr.cgrey, u.cgrey { text-decoration-color: #b7b7b7 } /* To change hyperlink, abbreviation, or underline lines on white backgrounds in specific occasions */
+a.cgrey, abbr.cgrey, u.cgrey { text-decoration-color: #b7b7b7 }
+a.cdarkgrey, abbr.cdarkgrey, u.cdarkgrey { text-decoration-color: #757575 } /* To change hyperlink, abbreviation, or underline lines on white backgrounds in specific occasions */
 span.vertbar { color: #dddddd50; font-weight: bold;} /* For specific vertical bars that separate certain content */
 
 /* Padding and Margin pixel adjustment Classes */
